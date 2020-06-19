@@ -860,3 +860,650 @@ a {
 .sqs-alternate-block-style-container .sqs-block-form input {
   color: #272727;
 }
+
+//colors
+@orange: #FF993D;
+@white: #FFFFFF;
+@darkBlue: #495062;
+@offWhite: #F6F6F6;
+
+//fonts
+@font-face{
+  font-family: 'brown-light';
+  src: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfc078eca3515b96eba2a9/1590673528992/BrownStd-Light.otf)
+}
+
+@font-face{
+  font-family: 'brown';
+  src: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfc07dbd69a776faa6afff/1590673533831/BrownStd-Regular.otf)
+}
+
+@font-face{
+  font-family: 'brown-bold';
+  src: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfc0813ae2372e774ea459/1590673537909/BrownStd-Bold.otf)
+}
+
+@font-face{
+  font-family: 'chronicle';
+  src: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfc124f92e96799c99c8a9/1590673700656/ChronicleTextG1-Roman.otf)
+}
+
+h1{
+  font-family: brown-light;
+  font-size: 4em;
+  line-height: 1.4em;
+  margin: 0px !important;
+  text-transform: uppercase;
+  letter-spacing: .0em
+}
+h2{
+  font-family: brown;
+  font-size: 3em;
+  line-height: 1.4em;
+  margin: 0px !important;
+}
+h3{
+  font-family: 'chronicle';
+  font-size: 1.5em;
+  line-height: 1.4em;
+  margin: 0px !important;
+  color: @orange;
+  margin-bottom: 2em !important;
+}
+
+h1, h2, h3, h4, p{
+  a{
+    border: none;
+    color: inherit !important;
+    &:hover{
+      border-color: inherit;
+    }
+  }
+}
+
+h3{
+  display: inline-block;
+  border-bottom: solid 0px;
+  border-color: inherit;
+  transition: padding-bottom 0.3s linear, transform 0.3s linear;
+  position: relative;
+  &:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 0px;
+    background-color: @orange;
+    position: absolute;
+    bottom: -5px;
+    left: 0px;
+    z-index: 2;
+    transition: height 0.3s linear, bottom 0.3s linear;
+  }
+  &:hover{
+    &:after{
+      height: 2px;
+    }
+    transform: translateY(-5px);
+  }
+}
+
+body, p{
+  font-family: brown-light;
+  font-size: 16px;
+  line-height: 1.4em;
+  margin: 0px;
+  letter-spacing: .02em
+}
+
+//general
+.Index-page-content{
+  padding: 48px !important;
+}
+.Mobile-bar--bottom{
+  display: none;
+}
+.is-mobile-overlay-active{
+  .Mobile-bar--top{
+    background-color: transparent;
+    pointer-events: none;
+    .Mobile-bar-branding{
+      position: relative;
+      background: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfa630d4d0494529518eec/1590666800142/whiteLogoArtboard+1.png) center no-repeat;
+      background-size: contain;
+      img{
+        opacity: 0;
+      }
+    }
+    .Mobile-bar-menu{
+      display: none !important;
+    }
+  }
+}
+.Mobile-bar--top{
+  background-color: @offWhite;
+  z-index: 999999 !important;
+  padding: 0px 36px !important;
+  .Mobile-bar-branding{
+    padding: 0px;
+  }
+}
+
+.Mobile-overlay-menu{
+  .Mobile-overlay-menu-main{
+    .Mobile-overlay-nav--primary{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      span{
+        display: flex;
+        padding-bottom: 2em;
+        div{
+          display: flex;
+          align-items: flex-end;
+          flex-grow: 1;
+          width: 100%;
+          padding-bottom: 5px;
+        }
+        div a{
+          font-size: 16px;
+          text-transform: uppercase;
+          white-space: nowrap;
+          margin: 0px 20px;
+          min-width: 120px;
+          width: auto;
+        }
+        button{
+          display: none;
+        }
+      }
+      span > a{
+        width: 40%;
+        min-width: 400px;
+        padding-bottom: 0px;
+        font-size: 4em;
+        text-transform: uppercase;
+      }
+    }
+    .Mobile-overlay-nav--secondary{
+      display: none;
+    }
+  }
+}
+.Icon--close{
+  width: 24px !important;
+  height: 24px !important;
+}
+
+//footer
+.Footer{
+  .Footer-inner{
+    padding: 48px !important;
+  }
+  #footerBlocksTop, .Footer-middle{
+    display: none;
+  }
+  .sqs-block-gallery{
+    padding-left: 5px;
+    .slide{
+      max-width: 156px;
+      img{
+        left: 0px !important;
+      }
+    }
+  }
+  .sqs-block-html{
+    p{
+      margin: 0px !important;;
+    }
+  }
+  .span-12{
+    > .row:first-of-type{
+      .sqs-block-html{
+        p{
+          margin-bottom: 5px !important;
+          font-size: 24px;
+          &:before{
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            transform: translateY(3px);
+            margin-right: 10px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+        p:nth-of-type(1):before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfabee5080b661289af8ba/1590668270021/phone.png);
+        }
+        p:nth-of-type(2):before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfabebf66c3f2e64a007fb/1590668267521/mail.png);
+        }
+        p:nth-of-type(3):before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfabe9c7e9ec7cf360ebc5/1590668265585/location.png);
+        }
+      }
+    }
+    > .row:last-of-type{
+      .sqs-block-html{
+        p{
+          font-size: 0.8em;
+        }
+      }
+    }
+  }
+}
+
+
+//homepage
+#collection-5eb1ca0f3ba3e06144ff1dd6{
+  margin-top: 0px !important;
+  overflow: hidden;
+  overflow-x: hidden !important;
+  &.showHeader{
+    .Mobile-bar--top{
+      opacity: 1 !important;
+      pointer-events: auto !important;
+    }
+  }
+  .Mobile-bar--top{
+    opacity: 0;
+    pointer-events: none;
+  }
+  #home-landing{
+    #forceDown{
+      width: 70px;
+      height: 70px;
+      position: fixed;
+      left: 80px;
+      bottom: 80px;
+      z-index: 10000;
+      border: solid 2px @white;
+      border-radius: 300px;
+      background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10679bad4847443d19a78/1590756985824/whiteArrowRight.png);
+      background-size: 30%;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      transition: opacity 0.3s ease;
+    }
+    &.small{
+      #forceDown{
+        opacity: 0;
+        pointer-events: none;
+      }
+      .Index-page-content{
+        width: 100vw;
+        margin-left: -0vw;
+        padding: 0px !important;
+        .landingDots.horizontal{
+          margin-top: 40px;
+          opacity: 0;
+          transition-delay: 0s !important
+        }
+        .landingDots.vertical{
+          margin-left: -40px !important;
+          opacity: 1 !important;
+          transition-delay: 1s !important
+        }
+        .sqs-block-gallery{
+          &:before{
+            top: 45%;
+            opacity: 0;
+            width: 0px;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+    .Index-page-content{
+      max-width: none;
+      width: 200vw;
+      margin-left: -100vw;
+      padding: 0px !important;
+      transition: all 1s ease;
+      .row{
+        margin: 0px !important;
+      }
+      .sqs-block-gallery{
+        padding: 0px;
+        &:before{
+          content: '';
+          position: fixed;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 999999;
+          width: 156px;
+          height: 54px;
+          pointer-events: none;
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfa630d4d0494529518eec/1590666800142/whiteLogoArtboard+1.png);
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: all 1s ease;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          bottom: 80px;
+          left: 36px;
+          width: 156px;
+          height: 54px;
+          pointer-events: none;
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ecfd0e20b3df05501858614/1590677730324/darkLogoArtboard+1.png);
+          background-size: contain;
+          background-position: center;
+        }
+        .landingDots.horizontal{
+          position: fixed;
+          bottom: 90px;
+          right: 50px;
+          z-index: 999;
+          display: flex;
+          transition: all 0.4s ease;
+          transition-delay: 1s;
+          &:before{
+            content: 'Scroll';
+            position: absolute;
+            top: -40px;
+            right: 0px;
+            color: white;
+            font-family: 'chronicle';
+            font-size: 20px;
+          }
+          .dot{
+            display: block;
+            width: 8px;
+            height: 8px;
+            margin: 0px 15px;
+            background-color: transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            border: solid 1px @white;
+            &.active{
+              background-color: @white !important;
+            }
+            &:last-of-type{
+              margin-right: 0px;
+            }
+          }
+        }
+        .landingDots.vertical{
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          margin-left: -80px;
+          opacity: 0;
+          z-index: 999;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.4s ease;
+          transition-delay: 0s;
+          .dot{
+            display: block;
+            width: 8px;
+            height: 8px;
+            margin: 15px 0px;
+            background-color: transparent;
+            border-radius: 20px;
+            cursor: pointer;
+            border: solid 1px #000;
+            &.active{
+              background-color: #000 !important;
+            }
+          }
+        }
+        .slide{
+          .margin-wrapper{
+            display: flex;
+            flex-direction: row-reverse;
+            .right{
+              width: 50%;
+              position: relative;
+              padding-bottom: 100vh;
+              .image-slide-anchor{
+                padding-bottom: 0vh;
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                opacity: 0;
+                transition: opacity 0.6s ease, transform 1s ease;
+                transform: translateY(-40px);
+                &.show{
+                  opacity: 1 !important;
+                  transform: translateY(0px);
+                }
+                img{
+                  display: none;
+                }
+              }
+            }
+            .left{
+              width: 50%;
+              background-color: #f6f6f6;
+              position: relative;
+              .image-slide-title{
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                width: 95%;
+                display: block;
+                margin-top: 0px;
+                white-space: normal;
+                text-align: left;
+                opacity: 0;
+                transition: opacity 0.6s ease, transform 1s ease;
+                transform: translateY(40px);
+                &.show{
+                  opacity: 1 !important;
+                  transform: translateY(0px) !important;
+                }
+                h1{
+                  margin-top:40px !important;
+                  padding-left: 48px;
+                  max-width: 50vw;
+                }
+              }
+              .more{
+                position: absolute;
+                bottom: 44px;
+                right: 80px;
+
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #home-culture{
+    .span-12 > .row:first-of-type{
+      display: flex;
+      .sqs-block-html{
+        height: 100%;
+        .sqs-block-content{
+          height: calc(~'100% - 17px');
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  #home-services{
+    background-color: @offWhite;
+    .sqs-block-code{
+      width: 100%;
+    }
+    #homeServices{
+      display: flex;
+      .service:last-of-type{
+        border-right: solid 1px !important;
+      }
+      .service:nth-of-type(1){
+
+        &:hover{
+          .symbol{
+            background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10fd53eaad50ebc436f09/1590759381102/h1.png);          }
+        }
+        .symbol{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10f30fa7bcf673aee8252/1590759216933/s1.png);
+        }
+        &:before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed103afb8dc7749a18deb5a/1590756274084/Smokey+Hollow_cam1_HQ_092319.jpg);
+        }
+      }
+      .service:nth-of-type(2){
+        .symbol{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10f33dca1f90327cd8d61/1590759219387/s2.png);
+        }
+        &:hover{
+          .symbol{
+            background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10fd7dc53ee1f1bbbc03e/1590759383993/h2.png);          }
+        }
+        &:before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed103b53fa10040aaa5b2f6/1590756280257/TheLine_Interior_Pool_Cam2_092319.jpg);
+        }
+      }
+      .service:nth-of-type(3){
+        .symbol{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10f35a5df4f55dd8874fa/1590759221930/s3.png);
+        }
+        &:hover{
+          .symbol{
+            background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10fdbdca1f90327cdac1f/1590759387405/h3.png);          }
+        }
+        &:before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed103bfdeae375165ac6121/1590756290529/Smokey+Hollow_cam3_HQ_092319.jpg);
+        }
+      }
+      .service:nth-of-type(4){
+        .symbol{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10f39fae0797396278537/1590759225378/s4.png);
+        }
+        &:hover{
+          .symbol{
+            background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed10fe2d45eb54e7a03ba95/1590759394040/h4.png);
+          }
+        }
+        &:before{
+          background-image: url(https://static1.squarespace.com/static/5eb1b80b640afc14bcda3c54/t/5ed103cbdc53ee1f1bba0358/1590756302982/Smokey+Hollow_cam4_HQ_092319.jpg);
+        }
+      }
+      .service{
+        width: 25%;
+        padding: 30px;
+        border: solid 1px;
+        border-right: none;
+        height: 715px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        &:before{
+          content: '';
+          display: block;
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0;
+          background-size: cover;
+          background-position: center;
+          transition: opacity 0.4s ease;
+        }
+        &:after{
+          content: '';
+          display: block;
+          pointer-events: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 2;
+          opacity: 0;
+          background-color: rgba(0,0,0,0.3);
+          transition: opacity 0.4s ease;
+        }
+        .symbol{
+          display: block;
+          pointer-events: none;
+          position: absolute;
+          top: 40px;
+          right: 30px;
+          width: 64px;
+          height: 64px;
+          z-index: 22;
+          margin: 0px;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        &:hover{
+          &:before, &:after{
+            opacity: 1 !important;
+          }
+          h1{
+            border-color: white !important;
+          }
+          h1, p, span{
+            color: white;
+          }
+        }
+        h1{
+          border-bottom: solid 2px transparent;
+          line-height: 1.4em;
+        }
+        h1, p, span{
+          z-index: 3;
+          transition: color 0.4s ease;
+        }
+        *{
+          pointer-events: none;
+        }
+        span{
+          font-family: 'chronicle';
+          margin-bottom: 30px;
+        }
+        h1{
+          position: absolute;
+          top: 40px;
+          right: 100%;
+          transform: rotate(-90deg);
+          transform-origin: top right;
+          text-align: right;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  #home-cta{
+    .span-12 > .row:first-of-type{
+      display: flex;
+      .sqs-block-html{
+        height: 100%;
+        .sqs-block-content{
+          height: calc(~'100% - 17px');
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+}
