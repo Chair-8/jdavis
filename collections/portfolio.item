@@ -1,11 +1,11 @@
 <div class="portfolio_item">
   <div class="portfolio_banner">
-    <img src="">
+    <img src="{item.assetUrl}">
   </div>
   <div class="portfolio_stats">
     <div class="stats_left">
-      <h1></h1>
-      <p></p>
+      <h1>{item.title}</h1>
+      {item.excerpt}
     </div>
     <div class="stats_right">
       <h2>Stats</h2>
@@ -13,33 +13,33 @@
         <h3>Awards</h3><p>{item.customContent.awards}</p>
       </div>
       <div class="stats_row">
-        <h3>Area</h3><p></p>
+        <h3>Area</h3><p>{item.customContent.area}</p>
       </div>
       <div class="stats_row">
-        <h3>Completion</h3><p></p>
+        <h3>Completion</h3><p>{item.customContent.completion}</p>
       </div>
       <div class="stats_row">
-        <h3>Disciplines</h3><p></p>
+        <h3>Disciplines</h3><p>{item.customContent.disciplines}</p>
       </div>
       <div class="stats_row">
-        <h3>Photographer</h3><p></p>
+        <h3>Photographer</h3><p>{item.customContent.photographer}</p>
       </div>
       <div class="stats_row">
-        <h3>Locations</h3><p></p>
+        <h3>Locations</h3><p>{item.customContent.locations}</p>
       </div>
     </div>
   </div>
   <div class="portfolio_content">
     <div class="grid-container">
-      <div class="image_one"></div>
-      <div class="image_two"></div>
-      <div class="image_three"></div>
-      <div class="text_problem"></div>
-      <div class="image_four"></div>
-      <div class="text_solution"></div>
-      <div class="image_five"></div>
-      <div class="image_six"></div>
-      <div class="text_result"></div>
+      <div class="image_one" style="background-image: url({item.customContent.gallery[0].assetUrl})"></div>
+      <div class="image_two" style="background-image: url({item.customContent.gallery[1].assetUrl})"></div>
+      <div class="image_three" style="background-image: url({item.customContent.gallery[2].assetUrl})"></div>
+      <div class="text_problem">{item.customContent.problem}</div>
+      <div class="image_four" style="background-image: url({item.customContent.gallery[3].assetUrl})"></div>
+      <div class="text_solution">{item.customContent.solution}</div>
+      <div class="image_five" style="background-image: url({item.customContent.gallery[4].assetUrl})"></div>
+      <div class="image_six" style="background-image: url({item.customContent.gallery[5].assetUrl})"></div>
+      <div class="text_result">{item.customContent.result}</div>
     </div>
   </div>
 </div>
