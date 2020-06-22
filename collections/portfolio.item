@@ -1,1 +1,45 @@
-<h1>CONTENT WILL GO HERE!</h1>
+<div class="portfolio_item">
+  <div class="portfolio_banner">
+    <img src="">
+  </div>
+  <div class="portfolio_stats">
+    <div class="stats_left">
+      <h1></h1>
+      <p></p>
+    </div>
+    <div class="stats_right">
+      <h2>Stats</h2>
+      <div class="stats_row">
+        <h3>Awards</h3><p>{customContent.awards}</p>
+      </div>
+      <div class="stats_row">
+        <h3>Area</h3><p></p>
+      </div>
+      <div class="stats_row">
+        <h3>Completion</h3><p></p>
+      </div>
+      <div class="stats_row">
+        <h3>Disciplines</h3><p></p>
+      </div>
+      <div class="stats_row">
+        <h3>Photographer</h3><p></p>
+      </div>
+      <div class="stats_row">
+        <h3>Locations</h3><p></p>
+      </div>
+    </div>
+  </div>
+  <div class="portfolio_content">
+    <div class="grid-container">
+      <div class="image_one"></div>
+      <div class="image_two"></div>
+      <div class="image_three"></div>
+      <div class="text_problem"></div>
+      <div class="image_four"></div>
+      <div class="text_solution"></div>
+      <div class="image_five"></div>
+      <div class="image_six"></div>
+      <div class="text_result"></div>
+    </div>
+  </div>
+</div>
