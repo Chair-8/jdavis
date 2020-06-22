@@ -31,14 +31,14 @@
   </div>
   <div class="portfolio_content">
     <div class="grid-container">
-      <div class="image_one" style="background-image: url({item.customContent.gallery[0].assetUrl})"></div>
-      <div class="image_two" style="background-image: url({item.customContent.gallery[1].assetUrl})"></div>
-      <div class="image_three" style="background-image: url({item.customContent.gallery[2].assetUrl})"></div>
+      <div class="portfolio_image image_one" style="background-image: url({item.customContent.gallery[0].assetUrl})"></div>
+      <div class="portfolio_image image_two" style="background-image: url({item.customContent.gallery[1].assetUrl})"></div>
+      <div class="portfolio_image image_three" style="background-image: url({item.customContent.gallery[2].assetUrl})"></div>
       <div class="text_problem">{item.customContent.problem}</div>
-      <div class="image_four" style="background-image: url({item.customContent.gallery[3].assetUrl})"></div>
+      <div class="portfolio_image image_four" style="background-image: url({item.customContent.gallery[3].assetUrl})"></div>
       <div class="text_solution">{item.customContent.solution}</div>
-      <div class="image_five" style="background-image: url({item.customContent.gallery[4].assetUrl})"></div>
-      <div class="image_six" style="background-image: url({item.customContent.gallery[5].assetUrl})"></div>
+      <div class="portfolio_image image_five" style="background-image: url({item.customContent.gallery[4].assetUrl})"></div>
+      <div class="portfolio_image image_six" style="background-image: url({item.customContent.gallery[5].assetUrl})"></div>
       <div class="text_result">{item.customContent.result}</div>
     </div>
   </div>
