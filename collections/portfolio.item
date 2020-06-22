@@ -10,7 +10,7 @@
     <div class="stats_right">
       <h2>Stats</h2>
       <div class="stats_row">
-        <h3>Awards</h3><p>{customContent.awards}</p>
+        <h3>Awards</h3><p>{item.customContent.awards}</p>
       </div>
       <div class="stats_row">
         <h3>Area</h3><p></p>
