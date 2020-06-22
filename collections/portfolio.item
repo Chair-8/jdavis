@@ -31,7 +31,6 @@
   </div>
   <div class="portfolio_content">
     <div class="grid-container">
-    {item.customContent.gallery[0].assetUrl}
       <div class="portfolio_image image_one"></div>
       <div class="portfolio_image image_two"></div>
       <div class="portfolio_image image_three"></div>
