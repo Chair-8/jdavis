@@ -32,15 +32,24 @@
   <div class="portfolio_content">
     <div class="grid-container">
     {item.customContent.gallery[0].assetUrl}
-      <div class="portfolio_image image_one"><img src="{item.customContent.gallery[0].assetUrl}"></div>
-      <div class="portfolio_image image_two"><img src="{item.customContent.gallery[1].assetUrl}"></div>
-      <div class="portfolio_image image_three"><img src="{item.customContent.gallery[2].assetUrl}"></div>
+      <div class="portfolio_image image_one"></div>
+      <div class="portfolio_image image_two"></div>
+      <div class="portfolio_image image_three"></div>
       <div class="text_problem">{item.customContent.problem}</div>
-      <div class="portfolio_image image_four"><img src="{item.customContent.gallery[3].assetUrl}"></div>
+      <div class="portfolio_image image_four"></div>
       <div class="text_solution">{item.customContent.solution}</div>
-      <div class="portfolio_image image_five"><img src="{item.customContent.gallery[4].assetUrl}"></div>
-      <div class="portfolio_image image_six"><img src="{item.customContent.gallery[5].assetUrl}"></div>
+      <div class="portfolio_image image_five"></div>
+      <div class="portfolio_image image_six"></div>
       <div class="text_result">{item.customContent.result}</div>
     </div>
   </div>
 </div>
+
+<script>
+function init(){
+var url = window.location.href
+$.getJSON( url + '?format=json-pretty', function( data ) {
+console.log(data)
+})
+}
+</script>
