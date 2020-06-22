@@ -52,4 +52,5 @@ $.getJSON( url + '?format=json-pretty', function( data ) {
 console.log(data)
 })
 }
+init()
 </script>
