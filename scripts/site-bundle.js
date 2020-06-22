@@ -91,4 +91,7 @@ document.addEventListener('DOMContentLoaded', init);
         $('#home-landing').toggleClass('small')
       })
     }
+    $.getJSON( 'https://jdavis-architects.squarespace.com/new-portfolio/smoky-hollow?format=json-pretty', function( data ) {
+console.log(data)
+    })
   }
