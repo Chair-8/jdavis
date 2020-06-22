@@ -34,12 +34,12 @@
       <div class="portfolio_image image_one"></div>
       <div class="portfolio_image image_two"></div>
       <div class="portfolio_image image_three"></div>
-      <div class="text_problem">{item.customContent.problem}</div>
+      <div class="text_problem"><strong>The Problem</strong><br>{item.customContent.problem}</div>
       <div class="portfolio_image image_four"></div>
-      <div class="text_solution">{item.customContent.solution}</div>
+      <div class="text_solution"><strong>The Solution</strong><br>{item.customContent.solution}</div>
       <div class="portfolio_image image_five"></div>
       <div class="portfolio_image image_six"></div>
-      <div class="text_result">{item.customContent.result}</div>
+      <div class="text_result"><strong>The Result</strong><br>{item.customContent.result}</div>
     </div>
   </div>
 </div>
