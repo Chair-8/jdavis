@@ -49,7 +49,9 @@
 function init(){
 var url = window.location.href
 $.getJSON( url + '?format=json-pretty', function( data ) {
-console.log(data)
+data.items[0].customTypes.gallery.forEach(function(a, i){
+console.log(a, i)
+})
 })
 }
 init()
