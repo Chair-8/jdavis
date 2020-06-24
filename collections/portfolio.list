@@ -85,7 +85,7 @@
       </div>
     </div>
     <div class="search_section">
-      <input type="text" name="searchInput" value="" placeholder="What are you looking for?">
+      <input type="text" name="searchInput" value="" placeholder="What are you looking for?"><button>Search</button>
     </div>
   </div>
 </div>
