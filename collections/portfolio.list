@@ -99,9 +99,9 @@
       </div>
       {.end}
       <div class="item_overlay">
-      <div class="title">{title}</div>
+      <h1 class="title">{title}</h1>
       <div class="summary">{excerpt}</div>
-      <p class="entry-more-link"><a data-read-more="View Project" href="{fullUrl}">View Project</a></p>
+      <h3 class="entry-more-link"><a data-read-more="View Project" href="{fullUrl}">View Project</a></h3>
       </div>
     {.or}
     {.end}
