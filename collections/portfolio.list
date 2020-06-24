@@ -92,8 +92,19 @@
 <div class="portfolio_items">
   {.repeated section items}
   <div class="portfolio_item">
-    {data.body}
-    something
+    {.excerpt?}
+      {.main-image?}
+      <div class="excerpt-thumb">
+        <a href="{fullUrl}" class="excerpt-image content-fill"><img {@|image-meta} /></a>
+      </div>
+      {.end}
+      <div class="p-summary">{excerpt}</div>
+      <p class="entry-more-link"><a data-read-more="{localizedStrings.readMore}" href="{fullUrl}"></a></p>
+    {.or}
+      {.section body}
+        <div class="e-content">{@}</div>
+      {.end}
+    {.end}
   </div>
   {.end}
 </div>
