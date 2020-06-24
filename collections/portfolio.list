@@ -1,0 +1,3 @@
+{.repeated section items}
+  {@|apply item-meta.block}
+{.end}
