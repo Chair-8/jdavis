@@ -1,4 +1,99 @@
-{.repeated section items}
-  {data.body}
-  something
-{.end}
+<div class="portfolio_feed">
+  <div class="porfolio_landing">
+    <div class="left">
+      <h1>Portfolio</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <div class="searchFilter_buttons">
+        <span class="search_button">Search</span>
+        <span class="filter_button">Filter</span>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightImage">
+
+      </div>
+    </div>
+  </div>
+  <div class="searchFilter_section">
+    <div class="filter_section">
+      <div class="column">
+        <div class="filter_cat">
+          Discipline
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Architecture
+          </div>
+          <div class="filter">
+            Interior Design
+          </div>
+          <div class="filter">
+            Landscape Architecture
+          </div>
+          <div class="filter">
+            Urban Planning & Mixed-Use
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="filter_cat">
+          Typology
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Multifamily
+          </div>
+          <div class="filter">
+            Office
+          </div>
+          <div class="filter">
+            Senior Living
+          </div>
+          <div class="filter">
+            Affordable
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="filter_cat">
+          Status
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Built
+          </div>
+          <div class="filter">
+            In Progress
+          </div>
+          <div class="filter">
+            Unbuilt
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="filter_cat">
+          Details
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Case Studies
+          </div>
+          <div class="filter">
+            Projects
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search_section">
+      <input type="text" name="searchInput" value="" placeholder="What are you looking for?">
+    </div>
+  </div>
+</div>
+<div class="portfolio_items">
+  {.repeated section items}
+  <div class="portfolio_item">
+    {data.body}
+    something
+  </div>
+  {.end}
+</div>
