@@ -10,6 +10,7 @@ function init(){
 
   $('body').on('click', '.teamItem', function(e){
     console.log('clicked')
+    console.log(e)
     $(e).find('.teamItem_lightbox').css('width', $(e).css('width') * 2 + $(e).css('margin-right') + 'px')
   })
 }
