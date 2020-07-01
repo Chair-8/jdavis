@@ -11,7 +11,7 @@ function init(){
   $('body').on('click', '.teamItem', function(e){
     console.log('clicked')
     console.log($(e.target).css('width'))
-    console.log($(e.target).children('.teamItem_lightbox'))
+    console.log($(e.target))
     $(e.target).find('.teamItem_lightbox').css('width', $(e.target).css('width') * 2 + $(e.target).css('margin-right') + 'px')
   })
 }
