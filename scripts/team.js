@@ -8,9 +8,9 @@ function init(){
     })
   })
 
-  $('.teamItem').click(function(){
+  $('body').on('click', '.teamItem', function(e){
     console.log('clicked')
-    $(this).find('.teamItem_lightbox').css('width', $(this).css('width') * 2 + $(this).css('margin-right') + 'px')
+    $(e).find('.teamItem_lightbox').css('width', $(e).css('width') * 2 + $(e).css('margin-right') + 'px')
   })
 }
 init()
