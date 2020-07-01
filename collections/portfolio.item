@@ -49,9 +49,7 @@ function init(){
 var url = window.location.href
 $.getJSON( url + '?format=json-pretty', function( data ) {
 console.log(data);
-data.items[0].customContent.gallery.forEach(function(a, i){
-console.log(a, i)
-console.log($('.portfolio_image').eq(i))
+data.item.customContent.gallery.forEach(function(a, i){
 $('.portfolio_image').eq(i).attr('style', 'background-image: url('+a.assetUrl+')')
 })
 })
