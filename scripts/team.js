@@ -10,6 +10,7 @@ function init(){
 
   $('body').on('click', '.teamItem', function(e){
     console.log('clicked')
+    console.log($(e.currentTarget))
     $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
     $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
   })
