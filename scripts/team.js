@@ -10,12 +10,8 @@ function init(){
 
   $('body').on('click', '.teamItem', function(e){
     console.log('clicked')
-    console.log($(e.target).css('width'))
-    console.log($(e.target.outerHTML))
-    console.log($(e.target))
-    console.log($(e.target))
-    console.log($(e))
-    $(e.target).find('.teamItem_lightbox').css('width', $(e.target).css('width') * 2 + $(e.target).css('margin-right') + 'px')
+    console.log($(e.currentTarget).find('.teamItem_lightbox'))
+    $(e.currentTarget).find('.teamItem_lightbox').css('width', $(e.currentTarget).css('width') * 2 + $(e.currentTarget).css('margin-right') + 'px')
   })
 }
 init()
