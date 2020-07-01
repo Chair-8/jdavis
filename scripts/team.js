@@ -11,8 +11,8 @@ function init(){
   $('body').on('click', '.teamItem', function(e){
     console.log('clicked')
     console.log($(e.currentTarget).find('.teamItem_lightbox'))
-    console.log($(e.currentTarget).css('width') * 2 + $(e.currentTarget).css('margin-right'))
-    $(e.currentTarget).find('.teamItem_lightbox').css('width', ($(e.currentTarget).css('width') * 2 + $(e.currentTarget).css('margin-right')) + 'px')
+    console.log(parseInt($(e.currentTarget).css('width')) * 2 + parseInt($(e.currentTarget).css('margin-right')))
+    $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
   })
 }
 init()
