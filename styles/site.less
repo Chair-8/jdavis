@@ -1158,6 +1158,21 @@ body, p{
         }
       }
     }
+    .right{
+
+      &::after{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 99;
+        pointer-events: none;
+        background-color: #495062;
+        opacity: 0.3;
+      }
+    }
     .Index-page-content{
       max-width: none;
       width: 200vw;
@@ -1265,18 +1280,6 @@ body, p{
               width: 50%;
               position: relative;
               padding-bottom: 100vh;
-              &::after{
-                display: block;
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                right: 0px;
-                bottom: 0px;
-                z-index: 99;
-                pointer-events: none;
-                background-color: #495062;
-                opacity: 0.3;
-              }
               .image-slide-anchor{
                 padding-bottom: 0vh;
                 position: absolute;
