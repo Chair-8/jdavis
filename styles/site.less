@@ -1315,6 +1315,9 @@ body, p{
               width: 50%;
               background-color: #f6f6f6;
               position: relative;
+              .image-slide-title:first-of-type{
+                opacity: 1 !important;
+              }
               .image-slide-title{
                 position: absolute;
                 top: 24px;
@@ -1324,9 +1327,10 @@ body, p{
                 margin-top: 0px;
                 white-space: normal;
                 text-align: left;
-                opacity: 0;
+                opacity: 1;
                 transition: opacity 0.6s ease, transform 1s ease;
-                transform: translateY(40px);
+                transform: translateY(0px);
+                opacity: 0;
                 &.show{
                   opacity: 1 !important;
                   transform: translateY(0px) !important;
