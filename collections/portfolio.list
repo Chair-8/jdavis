@@ -75,10 +75,10 @@
           Details
         </div>
         <div class="filters">
-          <div class="filter" data-filter="caseStudy">
+          <div class="filter" data-filter=".caseStudy">
             Case Studies
           </div>
-          <div class="filter" data-filter="project">
+          <div class="filter" data-filter=".project">
             Projects
           </div>
         </div>
