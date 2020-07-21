@@ -5,15 +5,15 @@ function init(){
       console.log(data);
       data.items.forEach(function(e, i){
         var cats = '';
-            if(a.categories){
-              if(a.categories.length > 1){
-                a.categories.forEach(function(a){
+            if(e.categories){
+              if(e.categories.length > 1){
+                e.categories.forEach(function(a){
                   console.log(a)
                   cats = cats + a.toLowerCase().replace(/\s/g,'').replace(/[^a-z0-9\s]/gi, '') + ' ';
                 })
-              }else if(a.categories.length == 1){
-                  console.log(a.categories[0])
-                cats = a.categories[0]
+              }else if(e.categories.length == 1){
+                  console.log(e.categories[0])
+                cats = e.categories[0]
               }
             }else{
              cats = ' ';
