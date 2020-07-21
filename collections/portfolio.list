@@ -91,7 +91,7 @@
 </div>
 <div class="portfolio_items">
   {.repeated section items}
-  <div class="portfolio_item">
+  <div class="portfolio_item {categories}">
     {.excerpt?}
       {.main-image?}
       <div class="excerpt-thumb">
