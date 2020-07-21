@@ -118,7 +118,7 @@ function init(){
   // filter items on button click
   $('.filter').click(function() {
     console.log($(this))
-    $('.filter .active').removeClass('active')
+    $('.filter.active').removeClass('active')
     $(this).addClass('active')
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
@@ -128,4 +128,27 @@ function init(){
       }, 500);
     }
   });
+
+  //TEAM
+  $('#collection-5ecf927ff1cc2137b826f3e2 .search_section').slideToggle(0)
+  $('#teamFilterButtons').attr('data-mode', '1')
+  $('#teamFilterButtons .filterButton').addClass('active')
+  $('#teamFilterButtons .searchButton').click(function(){
+    $('#teamFilterButtons .active').removeClass('active')
+    $(this).addClass('active')
+    if($('#teamFilterButtons').attr('data-mode') == '1'){
+      $('#teamFilterButtons').attr('data-mode', '0')
+      $('.search_section').slideToggle(300)
+      $('.filter_section').slideToggle(300)
+    }
+  })
+  $('#teamFilterButtons .filterButton').click(function(){
+    $('#teamFilterButtons .active').removeClass('active')
+    $(this).addClass('active')
+    if($('#teamFilterButtons').attr('data-mode') == '0'){
+      $('#teamFilterButtons').attr('data-mode', '1')
+      $('.search_section').slideToggle(300)
+      $('.filter_section').slideToggle(300)
+    }
+  })
 }
