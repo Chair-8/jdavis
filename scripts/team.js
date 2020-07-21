@@ -20,6 +20,24 @@ function init(){
             }
         $('teamfeed').append('<div class="teamItem '+cats+'"><div class="teamItem_content"><div class="teamItem_image" style="background-image:url('+e.assetUrl+')"></div><div class="teamItem_name">'+e.title+'</div><div class="teamItem_certifications">'+e.customContent.certifications.html+'</div><div class="teamItem_title">'+e.customContent.jobTitle.html+'</div></div><div class="teamItem_lightbox"><div class="teamItem_lightbox--name">'+e.title+'</div><div class="teamItem_lightbox--email">'+e.customContent.email+'</div><div class="teamItem_lightbox--bio">'+e.customContent.bio.html+'</div></div></div>')
       })
+      var $grid = $('teamfeed').isotope({
+        // options
+        itemSelector: '.teamItem',
+        layoutMode: 'fitRows'
+      });
+      // filter items on button click
+      $('.filter_cat').click(function() {
+        console.log($(this))
+        $('.filter_cat.active').removeClass('active')
+        $(this).addClass('active')
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        if($(window).width() < 850){
+          $('html, body').stop().animate({
+            scrollTop: $("teamfeed").offset().top - 30
+          }, 500);
+        }
+      });
     })
 
     $('body').on('click', '.teamItem', function(e){
@@ -39,23 +57,6 @@ function init(){
     })
   }
 
-  var $grid = $('teamfeed').isotope({
-    // options
-    itemSelector: '.teamItem',
-    layoutMode: 'fitRows'
-  });
-  // filter items on button click
-  $('.filter_cat').click(function() {
-    console.log($(this))
-    $('.filter_cat.active').removeClass('active')
-    $(this).addClass('active')
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-    if($(window).width() < 850){
-      $('html, body').stop().animate({
-        scrollTop: $("teamfeed").offset().top - 30
-      }, 500);
-    }
-  });
+
 }
 init()
