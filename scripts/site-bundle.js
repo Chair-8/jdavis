@@ -116,7 +116,7 @@ function init(){
     layoutMode: 'fitRows'
   });
   // filter items on button click
-  $('.filter').on( 'click', 'div', function() {
+  $('.filter').click(function() {
     console.log($(this))
     $('.filter .active').removeClass('active')
     $(this).addClass('active')
