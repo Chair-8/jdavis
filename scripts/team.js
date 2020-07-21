@@ -38,5 +38,24 @@ function init(){
       $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
     })
   }
+
+  var $grid = $('teamfeed').isotope({
+    // options
+    itemSelector: '.teamItem',
+    layoutMode: 'fitRows'
+  });
+  // filter items on button click
+  $('.filter_cat').click(function() {
+    console.log($(this))
+    $('.filter_cat.active').removeClass('active')
+    $(this).addClass('active')
+    var filterValue = $(this).attr('data-filter');
+    $grid.isotope({ filter: filterValue });
+    if($(window).width() < 850){
+      $('html, body').stop().animate({
+        scrollTop: $("teamfeed").offset().top - 30
+      }, 500);
+    }
+  });
 }
 init()
