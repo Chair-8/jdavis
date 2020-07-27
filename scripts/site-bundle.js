@@ -160,7 +160,7 @@ $('.careers .left span').click(function(){
   if(!$(this).hasClass('open')){
   $('.careers .left span.open').removeClass('open')
   $(this).addClass('open')
-  $('.careers .right.open').slideToggle(300).removeClass('open')
+  $('.careers .right span.open').slideToggle(300).removeClass('open')
   $('.careers .right span').eq($(this).index()).slideToggle(300).addClass('open')
 }
 })
