@@ -151,4 +151,8 @@ function init(){
       $('.filter_section').slideToggle(300)
     }
   })
+
+  $('.careers .right span').slideToggle(0)
+  $('.careers .right span:first-of-type').slideToggle(0).addClass('open')
+  $('.careers .left span:first-of-type').addClass('open')
 }
