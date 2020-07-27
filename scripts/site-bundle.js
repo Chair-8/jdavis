@@ -9,150 +9,159 @@ window.addEventListener('mercury:load', init);
 
 function init(){
 
-  if($('#collection-5eeb4f72f0932734f2f9ebd8').length){
-    var url = "/projects-1/test-project?";
-    $.getJSON( 'https://' + window.location.hostname + url + '&format=json', function( data ) {
-      console.log(data)
-      console.log(data.item.body)
-      console.log(JSON.parse($(data.item.body).html().split('*')[1]))
-    })
-  }
-  //menu
-  $('.Mobile-overlay-nav--primary .Mobile-overlay-nav-item').each(function(){
-    $(this).wrapAll('<span></span>')
+if($('#collection-5eeb4f72f0932734f2f9ebd8').length){
+  var url = "/projects-1/test-project?";
+  $.getJSON( 'https://' + window.location.hostname + url + '&format=json', function( data ) {
+    console.log(data)
+    console.log(data.item.body)
+    console.log(JSON.parse($(data.item.body).html().split('*')[1]))
   })
-  $('.Mobile-overlay-folder').each(function(i){
-    $(this).removeClass('Mobile-overlay-folder').attr('data-controller-folder', '').appendTo($('.Mobile-overlay-nav--primary > span').eq(i))
+}
+//menu
+$('.Mobile-overlay-nav--primary .Mobile-overlay-nav-item').each(function(){
+  $(this).wrapAll('<span></span>')
+})
+$('.Mobile-overlay-folder').each(function(i){
+  $(this).removeClass('Mobile-overlay-folder').attr('data-controller-folder', '').appendTo($('.Mobile-overlay-nav--primary > span').eq(i))
+})
+//menu end
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
+if($('#home-landing').length){
+  $('#home-landing').append('<div id="forceDown"></div>')
+  $(window).on('scroll', function(){
+    console.log($(window).scrollTop())
+    if($(window).scrollTop() > $('#home-landing').height() - 136){
+      $('body').addClass('showHeader')
+    }else{
+      $('body').removeClass('showHeader')
+    }
   })
-  //menu end
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  }
-  if($('#home-landing').length){
-    $('#home-landing').append('<div id="forceDown"></div>')
-    $(window).on('scroll', function(){
-      console.log($(window).scrollTop())
-      if($(window).scrollTop() > $('#home-landing').height() - 136){
-        $('body').addClass('showHeader')
-      }else{
-        $('body').removeClass('showHeader')
-      }
-    })
-    $('#forceDown').click(function(){
+  $('#forceDown').click(function(){
+    $('#home-landing').addClass('small')
+    $(document).off('mousewheel')
+    setTimeout(function(){
+      $('body').attr('style', 'overflow: scroll')
+    }, 1000)
+  })
+  $(document).on('mousewheel', function(e) {
+    var delta = e.originalEvent.wheelDelta;
+    if(delta < 0){
       $('#home-landing').addClass('small')
       $(document).off('mousewheel')
       setTimeout(function(){
         $('body').attr('style', 'overflow: scroll')
       }, 1000)
-    })
-    $(document).on('mousewheel', function(e) {
-      var delta = e.originalEvent.wheelDelta;
-      if(delta < 0){
-        $('#home-landing').addClass('small')
-        $(document).off('mousewheel')
-        setTimeout(function(){
-          $('body').attr('style', 'overflow: scroll')
-        }, 1000)
-      }
-    });
-    $('#home-landing .sqs-block-gallery').append('<div class="landingDots vertical"></div><div class="landingDots horizontal"></div>')
-    $('#home-landing .slide').each(function(){
-      $(this).attr('data-url', $(this).find('.image-slide-anchor').attr('href'))
-      $('.landingDots').append('<span class="dot"></span>')
-      $(this).find('.image-slide-title').html('<h1>'+$(this).find('.image-slide-title').text()+'</h1>')
-      $(this).find('.image-slide-anchor').attr('style', 'background-image: url('+$(this).find('img').attr("data-src")+'?format=2500w); overflow: hidden;')
-    })
-    $('#home-landing .slide').eq(0).find('.image-slide-anchor').wrapAll('<div class="right"></div>')
-    $('#home-landing .slide').eq(0).find('.image-slide-title').wrapAll('<div class="left"></div>')
-    $('#home-landing .slide').each(function(i){
-      if(i > 0){
-        $(this).find('.image-slide-title').appendTo($('#home-landing .slide').eq(0).find('.left'))
-        $(this).find('.image-slide-anchor').appendTo($('#home-landing .slide').eq(0).find('.right'))
-      }
-      $(this).find('.left').append('<h3 class="more"><a href="'+$(this).attr("data-url")+'">Smoky<br>Hollow</a></h3>')
-    })
-    $('#home-landing .right .image-slide-anchor').eq(0).addClass('show')
-    $('#home-landing .left .image-slide-title').eq(0).addClass('show')
-    $('.landingDots.vertical .dot').eq(0).addClass('active')
-    $('.landingDots.horizontal .dot').eq(0).addClass('active')
+    }
+  });
+  $('#home-landing .sqs-block-gallery').append('<div class="landingDots vertical"></div><div class="landingDots horizontal"></div>')
+  $('#home-landing .slide').each(function(){
+    $(this).attr('data-url', $(this).find('.image-slide-anchor').attr('href'))
+    $('.landingDots').append('<span class="dot"></span>')
+    $(this).find('.image-slide-title').html('<h1>'+$(this).find('.image-slide-title').text()+'</h1>')
+    $(this).find('.image-slide-anchor').attr('style', 'background-image: url('+$(this).find('img').attr("data-src")+'?format=2500w); overflow: hidden;')
+  })
+  $('#home-landing .slide').eq(0).find('.image-slide-anchor').wrapAll('<div class="right"></div>')
+  $('#home-landing .slide').eq(0).find('.image-slide-title').wrapAll('<div class="left"></div>')
+  $('#home-landing .slide').each(function(i){
+    if(i > 0){
+      $(this).find('.image-slide-title').appendTo($('#home-landing .slide').eq(0).find('.left'))
+      $(this).find('.image-slide-anchor').appendTo($('#home-landing .slide').eq(0).find('.right'))
+    }
+    $(this).find('.left').append('<h3 class="more"><a href="'+$(this).attr("data-url")+'">Smoky<br>Hollow</a></h3>')
+  })
+  $('#home-landing .right .image-slide-anchor').eq(0).addClass('show')
+  $('#home-landing .left .image-slide-title').eq(0).addClass('show')
+  $('.landingDots.vertical .dot').eq(0).addClass('active')
+  $('.landingDots.horizontal .dot').eq(0).addClass('active')
 
-    $('.dot').click(function(){
-      $('.landingDots.vertical .dot').removeClass('active')
-      $('.landingDots.horizontal .dot').removeClass('active')
-      $('.landingDots.vertical .dot').eq($(this).index()).addClass('active')
-      $('.landingDots.horizontal .dot').eq($(this).index()).addClass('active')
-      $('#home-landing .right .image-slide-anchor').removeClass('show')
-      $('#home-landing .left .image-slide-title').removeClass('show')
-      $('#home-landing .right .image-slide-anchor').eq($(this).index()).addClass('show')
-      $('#home-landing .left .image-slide-title').eq($(this).index()).addClass('show')
-    })
+  $('.dot').click(function(){
+    $('.landingDots.vertical .dot').removeClass('active')
+    $('.landingDots.horizontal .dot').removeClass('active')
+    $('.landingDots.vertical .dot').eq($(this).index()).addClass('active')
+    $('.landingDots.horizontal .dot').eq($(this).index()).addClass('active')
+    $('#home-landing .right .image-slide-anchor').removeClass('show')
+    $('#home-landing .left .image-slide-title').removeClass('show')
+    $('#home-landing .right .image-slide-anchor').eq($(this).index()).addClass('show')
+    $('#home-landing .left .image-slide-title').eq($(this).index()).addClass('show')
+  })
 
-    $('.Mobile-bar--top').click(function(){
-      $('#home-landing').toggleClass('small')
-    })
+  $('.Mobile-bar--top').click(function(){
+    $('#home-landing').toggleClass('small')
+  })
+}
+
+//projects
+$('.portfolio_feed .search_section').slideToggle(0)
+$('.portfolio_feed').attr('data-mode', '1')
+$('.search_button').click(function(){
+  if($('.portfolio_feed').attr('data-mode') == '1'){
+    $('.portfolio_feed').attr('data-mode', '0')
+    $('.portfolio_feed .search_section').slideToggle(300)
+    $('.portfolio_feed .filter_section').slideToggle(300)
   }
+})
+$('.filter_button').click(function(){
+  if($('.portfolio_feed').attr('data-mode') == '0'){
+    $('.portfolio_feed').attr('data-mode', '1')
+    $('.portfolio_feed .search_section').slideToggle(300)
+    $('.portfolio_feed .filter_section').slideToggle(300)
+  }
+})
 
-  //projects
-  $('.portfolio_feed .search_section').slideToggle(0)
-  $('.portfolio_feed').attr('data-mode', '1')
-  $('.search_button').click(function(){
-    if($('.portfolio_feed').attr('data-mode') == '1'){
-      $('.portfolio_feed').attr('data-mode', '0')
-      $('.portfolio_feed .search_section').slideToggle(300)
-      $('.portfolio_feed .filter_section').slideToggle(300)
-    }
-  })
-  $('.filter_button').click(function(){
-    if($('.portfolio_feed').attr('data-mode') == '0'){
-      $('.portfolio_feed').attr('data-mode', '1')
-      $('.portfolio_feed .search_section').slideToggle(300)
-      $('.portfolio_feed .filter_section').slideToggle(300)
-    }
-  })
+var $grid = $('.portfolio_items').isotope({
+  // options
+  itemSelector: '.portfolio_item',
+  layoutMode: 'fitRows'
+});
+// filter items on button click
+$('.filter').click(function() {
+  console.log($(this))
+  $('.filter.active').removeClass('active')
+  $(this).addClass('active')
+  var filterValue = $(this).attr('data-filter');
+  $grid.isotope({ filter: filterValue });
+  if($(window).width() < 850){
+    $('html, body').stop().animate({
+      scrollTop: $(".portfolio_items").offset().top - 30
+    }, 500);
+  }
+});
 
-  var $grid = $('.portfolio_items').isotope({
-    // options
-    itemSelector: '.portfolio_item',
-    layoutMode: 'fitRows'
-  });
-  // filter items on button click
-  $('.filter').click(function() {
-    console.log($(this))
-    $('.filter.active').removeClass('active')
-    $(this).addClass('active')
-    var filterValue = $(this).attr('data-filter');
-    $grid.isotope({ filter: filterValue });
-    if($(window).width() < 850){
-      $('html, body').stop().animate({
-        scrollTop: $(".portfolio_items").offset().top - 30
-      }, 500);
-    }
-  });
+//TEAM
+$('#collection-5ecf927ff1cc2137b826f3e2 .search_section').slideToggle(0)
+$('#teamFilterButtons').attr('data-mode', '1')
+$('#teamFilterButtons .filterButton').addClass('active')
+$('#teamFilterButtons .searchButton').click(function(){
+  $('#teamFilterButtons .active').removeClass('active')
+  $(this).addClass('active')
+  if($('#teamFilterButtons').attr('data-mode') == '1'){
+    $('#teamFilterButtons').attr('data-mode', '0')
+    $('.search_section').slideToggle(300)
+    $('.filter_section').slideToggle(300)
+  }
+})
+$('#teamFilterButtons .filterButton').click(function(){
+  $('#teamFilterButtons .active').removeClass('active')
+  $(this).addClass('active')
+  if($('#teamFilterButtons').attr('data-mode') == '0'){
+    $('#teamFilterButtons').attr('data-mode', '1')
+    $('.search_section').slideToggle(300)
+    $('.filter_section').slideToggle(300)
+  }
+})
 
-  //TEAM
-  $('#collection-5ecf927ff1cc2137b826f3e2 .search_section').slideToggle(0)
-  $('#teamFilterButtons').attr('data-mode', '1')
-  $('#teamFilterButtons .filterButton').addClass('active')
-  $('#teamFilterButtons .searchButton').click(function(){
-    $('#teamFilterButtons .active').removeClass('active')
-    $(this).addClass('active')
-    if($('#teamFilterButtons').attr('data-mode') == '1'){
-      $('#teamFilterButtons').attr('data-mode', '0')
-      $('.search_section').slideToggle(300)
-      $('.filter_section').slideToggle(300)
-    }
-  })
-  $('#teamFilterButtons .filterButton').click(function(){
-    $('#teamFilterButtons .active').removeClass('active')
-    $(this).addClass('active')
-    if($('#teamFilterButtons').attr('data-mode') == '0'){
-      $('#teamFilterButtons').attr('data-mode', '1')
-      $('.search_section').slideToggle(300)
-      $('.filter_section').slideToggle(300)
-    }
-  })
+$('.careers .right span').slideToggle(0)
+$('.careers .right span:first-of-type').slideToggle(0).addClass('open')
+$('.careers .left span:first-of-type').addClass('open')
 
-  $('.careers .right span').slideToggle(0)
-  $('.careers .right span:first-of-type').slideToggle(0).addClass('open')
-  $('.careers .left span:first-of-type').addClass('open')
+$('.careers .left span').click(function(){
+  if(!$(this).hasClass('open')){
+  $('.careers .left span.open').removeClass('open')
+  $(this).addClass('open')
+  $('.careers .right.open').slideToggle(300).removeClass('open')
+  ('.careers .right').eq($(this).index()).slideToggle(300).addClass('open')
+}
+})
 }
