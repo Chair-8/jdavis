@@ -18,7 +18,7 @@ function init(){
         }else{
           cats = ' ';
         }
-        $('teamfeed').append('<div class="teamItem '+cats+'"><div class="teamItem_content"><div class="teamItem_image" style="background-image:url('+e.assetUrl+')"></div><div class="teamItem_name">'+e.title+'</div><div class="teamItem_certifications">'+e.customContent.certifications.html+'</div><div class="teamItem_title">'+e.customContent.jobTitle.html+'</div></div><div class="teamItem_lightbox"><div class="teamItem_lightbox--name">'+e.title+'</div><div class="teamItem_lightbox--email">'+e.customContent.email+'</div><div class="teamItem_lightbox--bio">'+e.customContent.bio.html+'</div></div></div>')
+        $('teamfeed').append('<div class="teamItem '+cats+'"><div class="teamItem_content"><div class="teamItem_image" style="background-image:url('+e.assetUrl+')"></div><div class="teamItem_name">'+e.title+'</div><div class="teamItem_certifications">'+e.customContent.certifications.html+'</div><div class="teamItem_title">'+e.customContent.jobTitle.html+'</div></div><div class="teamItem_lightbox"><span class="close">X</span><div class="teamItem_lightbox--name">'+e.title+'</div><div class="teamItem_lightbox--email">'+e.customContent.email+'</div><div class="teamItem_lightbox--bio">'+e.customContent.bio.html+'</div></div></div>')
       })
       var $grid = $('teamfeed').isotope({
         // options
@@ -42,8 +42,13 @@ function init(){
         }
       });
     })
-
+$('body').on('click', '.teamItem .close', function(e){
+$('.teamItem.rightAlign').removeClass('rightAlign')
+$('.teamItem.leftAlign').removeClass('leftAlign')
+})
     $('body').on('click', '.teamItem', function(e){
+      $('.teamItem.rightAlign').removeClass('rightAlign')
+      $('.teamItem.leftAlign').removeClass('leftAlign')
       console.log('clicked')
       console.log($(e.currentTarget))
       console.log($(e.currentTarget.offsetLeft)[0] + $(e.currentTarget.offsetWidth)[0])
