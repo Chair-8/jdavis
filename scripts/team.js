@@ -60,10 +60,8 @@ function init(){
       }
     })
     $('body').on('click', '.close', function(e){
-      console.log($('.teamItem_lightbox.rightAlign'))
-      console.log($('.teamItem_lightbox.leftAlign'))
-      $('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
-      $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
+      console.log('close')
+      $('.teamItem_lightbox').removeClass('rightAlign').removeClass('leftAlign')
     })
   }
 
