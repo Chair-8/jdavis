@@ -43,7 +43,8 @@ function init(){
       });
     })
 
-    $('body').on('click', '.teamItem', function(e){
+    //$('body').on('click', '.teamItem', function(e){
+    $('.teamItem').click(function(e){
       if($('.teamItem_lightbox.rightAlign').length || $('.teamItem_lightbox.leftAlign').length){
 
       }else{
