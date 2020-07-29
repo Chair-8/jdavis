@@ -5,25 +5,28 @@ function init(){
       console.log(data);
       data.items.forEach(function(e, i){
         var cats = '';
-            if(e.categories){
-              if(e.categories.length > 1){
-                e.categories.forEach(function(a){
-                  console.log(a)
-                  cats = cats + a.toLowerCase().replace(/\s/g,'').replace(/[^a-z0-9\s]/gi, '') + ' ';
-                })
-              }else if(e.categories.length == 1){
-                  console.log(e.categories[0])
-                cats = e.categories[0]
-              }
-            }else{
-             cats = ' ';
-            }
+        if(e.categories){
+          if(e.categories.length > 1){
+            e.categories.forEach(function(a){
+              console.log(a)
+              cats = cats + a.toLowerCase().replace(/\s/g,'').replace(/[^a-z0-9\s]/gi, '') + ' ';
+            })
+          }else if(e.categories.length == 1){
+            console.log(e.categories[0])
+            cats = e.categories[0]
+          }
+        }else{
+          cats = ' ';
+        }
         $('teamfeed').append('<div class="teamItem '+cats+'"><div class="teamItem_content"><div class="teamItem_image" style="background-image:url('+e.assetUrl+')"></div><div class="teamItem_name">'+e.title+'</div><div class="teamItem_certifications">'+e.customContent.certifications.html+'</div><div class="teamItem_title">'+e.customContent.jobTitle.html+'</div></div><div class="teamItem_lightbox"><div class="teamItem_lightbox--name">'+e.title+'</div><div class="teamItem_lightbox--email">'+e.customContent.email+'</div><div class="teamItem_lightbox--bio">'+e.customContent.bio.html+'</div></div></div>')
       })
       var $grid = $('teamfeed').isotope({
         // options
         itemSelector: '.teamItem',
-        layoutMode: 'fitRows'
+        layoutMode: 'fitRows',
+        fitRows: {
+          gutter: 40
+        }
       });
       // filter items on button click
       $('.filter_cat').click(function() {
