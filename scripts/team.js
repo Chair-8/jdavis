@@ -19,6 +19,24 @@ function init(){
           cats = ' ';
         }
         $('teamfeed').append('<div class="teamItem '+cats+'"><div class="teamItem_content"><div class="teamItem_image" style="background-image:url('+e.assetUrl+')"></div><div class="teamItem_name">'+e.title+'</div><div class="teamItem_certifications">'+e.customContent.certifications.html+'</div><div class="teamItem_title">'+e.customContent.jobTitle.html+'</div></div><div class="teamItem_lightbox"><span class="close">X</span><div class="teamItem_lightbox--name">'+e.title+'</div><div class="teamItem_lightbox--email">'+e.customContent.email+'</div><div class="teamItem_lightbox--bio">'+e.customContent.bio.html+'</div></div></div>')
+      }, function(){
+        $('.teamItem').click(function(e){
+          console.log($(e))
+          if($('.teamItem_lightbox.rightAlign').length || $('.teamItem_lightbox.leftAlign').length){
+
+          }else{
+            console.log($(e))
+            if($(e.currentTarget.offsetLeft)[0] + $(e.currentTarget.offsetWidth)[0] + $(e.currentTarget.offsetWidth)[0] + parseInt($(e.currentTarget).css('margin-right')) > $('teamfeed').width()){
+              //lightbox goes to the left
+              $(e.currentTarget).find('.teamItem_lightbox').addClass('rightAlign')
+            }else{
+              //lightbox goes to the right
+              $(e.currentTarget).find('.teamItem_lightbox').addClass('leftAlign')
+            }
+            $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + 50 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
+            $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
+          }
+        })
       })
       var $grid = $('teamfeed').isotope({
         // options
@@ -44,22 +62,7 @@ function init(){
     })
 
     //$('body').on('click', '.teamItem', function(e){
-    $('.teamItem').click(function(e){
-      if($('.teamItem_lightbox.rightAlign').length || $('.teamItem_lightbox.leftAlign').length){
 
-      }else{
-        console.log($(e))
-        if($(e.currentTarget.offsetLeft)[0] + $(e.currentTarget.offsetWidth)[0] + $(e.currentTarget.offsetWidth)[0] + parseInt($(e.currentTarget).css('margin-right')) > $('teamfeed').width()){
-          //lightbox goes to the left
-          $(e.currentTarget).find('.teamItem_lightbox').addClass('rightAlign')
-        }else{
-          //lightbox goes to the right
-          $(e.currentTarget).find('.teamItem_lightbox').addClass('leftAlign')
-        }
-        $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + 50 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
-        $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
-      }
-    })
     $('body').on('click', '.close', function(e){
       console.log('close')
       $('.teamItem_lightbox').removeClass('rightAlign').removeClass('leftAlign')
