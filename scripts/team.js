@@ -55,7 +55,7 @@ function init(){
         //lightbox goes to the right
         $(e.currentTarget).find('.teamItem_lightbox').addClass('leftAlign')
       }
-      $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
+      $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + 50 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
       $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
     })
   }
