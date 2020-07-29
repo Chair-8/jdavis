@@ -42,29 +42,27 @@ function init(){
         }
       });
     })
+
+    $('body').on('click', '.teamItem', function(e){
+      $('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
+      $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
+      console.log($(e))
+      if($(e.currentTarget.offsetLeft)[0] + $(e.currentTarget.offsetWidth)[0] + $(e.currentTarget.offsetWidth)[0] + parseInt($(e.currentTarget).css('margin-right')) > $('teamfeed').width()){
+        //lightbox goes to the left
+        $(e.currentTarget).find('.teamItem_lightbox').addClass('rightAlign')
+      }else{
+        //lightbox goes to the right
+        $(e.currentTarget).find('.teamItem_lightbox').addClass('leftAlign')
+      }
+      $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + 50 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
+      $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
+    })
     $('body').on('click', '.close', function(e){
       console.log($('.teamItem_lightbox.rightAlign'))
       console.log($('.teamItem_lightbox.leftAlign'))
       $('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
       $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
     })
-    $('body').on('click', '.teamItem', function(e){
-      if($(e.target).hasClass('teamItem')){
-        $('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
-        $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
-        console.log($(e))
-        if($(e.currentTarget.offsetLeft)[0] + $(e.currentTarget.offsetWidth)[0] + $(e.currentTarget.offsetWidth)[0] + parseInt($(e.currentTarget).css('margin-right')) > $('teamfeed').width()){
-          //lightbox goes to the left
-          $(e.currentTarget).find('.teamItem_lightbox').addClass('rightAlign')
-        }else{
-          //lightbox goes to the right
-          $(e.currentTarget).find('.teamItem_lightbox').addClass('leftAlign')
-        }
-        $(e.currentTarget).find('.teamItem_lightbox').css('width', (parseInt($(e.currentTarget).css('width')) * 2 + 50 + parseInt($(e.currentTarget).css('margin-right'))) + 'px')
-        $(e.currentTarget).find('.teamItem_lightbox').css('height', parseInt($(e.currentTarget).css('height')) + 'px')
-      }
-    })
-
   }
 
 
