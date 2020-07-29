@@ -43,12 +43,12 @@ function init(){
       });
     })
 $('body').on('click', '.teamItem .close', function(e){
-$('.teamItem.rightAlign').removeClass('rightAlign')
-$('.teamItem.leftAlign').removeClass('leftAlign')
+$('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
+$('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
 })
     $('body').on('click', '.teamItem', function(e){
-      $('.teamItem.rightAlign').removeClass('rightAlign')
-      $('.teamItem.leftAlign').removeClass('leftAlign')
+      $('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
+      $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
       console.log('clicked')
       console.log($(e.currentTarget))
       console.log($(e.currentTarget.offsetLeft)[0] + $(e.currentTarget.offsetWidth)[0])
