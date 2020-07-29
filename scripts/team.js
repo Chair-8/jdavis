@@ -52,15 +52,15 @@ $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
       $('.teamItem_lightbox.rightAlign').removeClass('rightAlign')
       $('.teamItem_lightbox.leftAlign').removeClass('leftAlign')
       console.log('clicked')
-      if($(e.parentNode.offsetLeft)[0] + $(e.parentNode.offsetWidth)[0] + $(e.parentNode.offsetWidth)[0] + parseInt($(e.parentNode).css('margin-right')) > $('teamfeed').width()){
+      if($(e.parentElement.offsetLeft)[0] + $(e.parentElement.offsetWidth)[0] + $(e.parentElement.offsetWidth)[0] + parseInt($(e.parentElement).css('margin-right')) > $('teamfeed').width()){
         //lightbox goes to the left
-        $(e.parentNode).find('.teamItem_lightbox').addClass('rightAlign')
+        $(e.parentElement).find('.teamItem_lightbox').addClass('rightAlign')
       }else{
         //lightbox goes to the right
-        $(e.parentNode).find('.teamItem_lightbox').addClass('leftAlign')
+        $(e.parentElement).find('.teamItem_lightbox').addClass('leftAlign')
       }
-      $(e.parentNode).find('.teamItem_lightbox').css('width', (parseInt($(e.parentNode).css('width')) * 2 + 50 + parseInt($(e.parentNode).css('margin-right'))) + 'px')
-      $(e.parentNode).find('.teamItem_lightbox').css('height', parseInt($(e.parentNode).css('height')) + 'px')
+      $(e.parentElement).find('.teamItem_lightbox').css('width', (parseInt($(e.parentElement).css('width')) * 2 + 50 + parseInt($(e.parentElement).css('margin-right'))) + 'px')
+      $(e.parentElement).find('.teamItem_lightbox').css('height', parseInt($(e.parentElement).css('height')) + 'px')
     })
   }
 
