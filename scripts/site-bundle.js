@@ -115,7 +115,7 @@ function init(){
     itemSelector: '.portfolio_item',
     layoutMode: 'fitRows',
     fitRows: {
-  gutter: 40
+  gutter: 20
 }
   });
   // filter items on button click
