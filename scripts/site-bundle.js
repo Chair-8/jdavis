@@ -113,7 +113,10 @@ function init(){
   var $grid = $('.portfolio_items').isotope({
     // options
     itemSelector: '.portfolio_item',
-    layoutMode: 'fitRows'
+    layoutMode: 'fitRows',
+    fitRows: {
+  gutter: 40
+}
   });
   // filter items on button click
   $('.filter').click(function() {
