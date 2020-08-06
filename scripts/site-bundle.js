@@ -115,8 +115,8 @@ function init(){
     itemSelector: '.portfolio_item',
     layoutMode: 'fitRows',
     fitRows: {
-  gutter: 20
-}
+      gutter: 20
+    }
   });
   // filter items on button click
   $('.filter').click(function() {
