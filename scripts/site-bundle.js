@@ -100,7 +100,11 @@ function init(){
     $('.Mobile-bar--top').click(function(){
       $('#home-landing').toggleClass('small')
     })
+
+
   }
+
+  $('#block-yui_3_17_2_1_1590666403741_14589').clone().appendTo($('.Mobile-overlay-menu-main'))
 
   //projects
   $('.portfolio_feed .search_section').slideToggle(0)
