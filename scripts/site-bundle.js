@@ -84,7 +84,7 @@ function init(){
       $('.landingDots.horizontal .dot').eq($(this).index()).addClass('active')
       $('#home-landing .right .image-slide-anchor').removeClass('show')
       $('#home-landing .left .image-slide-title').removeClass('show')
-      $('#home-landing .left .more').addClass('show')
+      $('#home-landing .left .more').removeClass('show')
       $('#home-landing .right .image-slide-anchor').eq($(this).index()).addClass('show')
       $('#home-landing .left .image-slide-title').eq($(this).index()).addClass('show')
       $('#home-landing .left .more').eq($(this).index()).addClass('show')
