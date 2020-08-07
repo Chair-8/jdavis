@@ -65,10 +65,10 @@ function init(){
     $('#home-landing .slide').eq(0).find('.image-slide-anchor').wrapAll('<div class="right"></div>')
     $('#home-landing .slide').eq(0).find('.image-slide-title').wrapAll('<div class="left"></div>')
     $('#home-landing .slide').each(function(i){
-      if(i > 0){
+
         $(this).find('.image-slide-title').appendTo($('#home-landing .slide').eq(0).find('.left'))
         $(this).find('.image-slide-anchor').appendTo($('#home-landing .slide').eq(0).find('.right'))
-      }
+      
       $(this).find('.left').append('<h3 class="more"><a href="'+$(this).attr("data-url")+'">Smoky<br>Hollow</a></h3>')
     })
     $('#home-landing .right .image-slide-anchor').eq(0).addClass('show')
