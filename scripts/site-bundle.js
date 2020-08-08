@@ -169,6 +169,8 @@ function init(){
     }
   })
 
+  //careers
+
   $('.careers .right span').slideToggle(0)
   $('.careers .right span:first-of-type').slideToggle(0).addClass('open')
   $('.careers .left span:first-of-type').addClass('open')
@@ -181,4 +183,11 @@ function init(){
       $('.careers .right span').eq($(this).index()).slideToggle(300).addClass('open')
     }
   })
+
+  if($('job').length){
+    $('job span').slideToggle(0)
+    $('job > h3').click(function(){
+      $(this).next().slideToggle(300)
+    })
+  }
 }
