@@ -32,7 +32,7 @@ function init(){
     $('#home-landing').append('<div id="forceDown"></div>')
     $(window).on('scroll', function(){
       console.log($(window).scrollTop())
-      if($(window).scrollTop() > $('#home-landing').height() - 100){
+      if($(window).scrollTop() > $('#home-landing').height() - 80){
         $('body').addClass('showHeader')
       }else{
         $('body').removeClass('showHeader')
