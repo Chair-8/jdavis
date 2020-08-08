@@ -187,7 +187,7 @@ function init(){
   if($('job').length){
     $('job span').slideToggle(0)
     $('job > h3').click(function(){
-      $(this).next().slideToggle(300)
+      $(this).next().slideToggle(600)
     })
   }
 }
