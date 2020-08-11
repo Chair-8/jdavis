@@ -111,8 +111,11 @@
 
 <script>
 $('.portfolio_item').each(function(){
-  $(this).attr('class').split(' ')[1].split(',').forEach(function(i, a){
+var t = $(this).attr('class').split(' ')[1];
+  $(this).attr('class').split(' ')[1].split(',').forEach(function(a, i){
     console.log(a)
+    $(this).removeClass(t)
+    $(this).addClass(a)
   })
 })
 </script>
