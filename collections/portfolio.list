@@ -108,3 +108,11 @@
   </div>
   {.end}
 </div>
+
+<script>
+$('.portfolio_item').each(function(){
+  $(this).attr('class').split(' ')[1]).split(',').forEach(function(i, a){
+    console.log(a)
+  })
+})
+</script>
