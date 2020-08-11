@@ -1,6 +1,6 @@
 <div class="portfolio_item">
   <div class="portfolio_banner">
-    <img src="{item.assetUrl}">
+    <img src="{item.assetUrl}?format=2500w">
   </div>
   <div class="portfolio_stats">
     <div class="stats_left">
