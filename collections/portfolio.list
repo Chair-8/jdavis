@@ -21,17 +21,17 @@
           Discipline
         </div>
         <div class="filters">
-          <div class="filter">
+          <div class="filter" data-filter=".planning">
+            Planning
+          </div>
+          <div class="filter" data-filter=".architecture">
             Architecture
           </div>
-          <div class="filter">
-            Interior Design
-          </div>
-          <div class="filter">
+          <div class="filter" data-filter=".landscape">
             Landscape Architecture
           </div>
-          <div class="filter">
-            Urban Planning & Mixed-Use
+          <div class="filter" data-filter=".interior">
+            Interior Design
           </div>
         </div>
       </div>
