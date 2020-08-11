@@ -114,7 +114,7 @@ function init(){
     if($('.portfolio_feed').attr('data-mode') == '1'){
 
         $('.searchFilter_buttons .active').removeClass('active')
-        $('.filter_button').addClass('active')
+        $('.search_button').addClass('active')
       $('.portfolio_feed').attr('data-mode', '0')
       $('.portfolio_feed .search_section').slideToggle(300)
       $('.portfolio_feed .filter_section').slideToggle(300)
@@ -124,7 +124,7 @@ function init(){
     if($('.portfolio_feed').attr('data-mode') == '0'){
 
         $('.searchFilter_buttons .active').removeClass('active')
-        $('.search_button').addClass('active')
+        $('.filter_button').addClass('active')
       $('.portfolio_feed').attr('data-mode', '1')
       $('.portfolio_feed .search_section').slideToggle(300)
       $('.portfolio_feed .filter_section').slideToggle(300)
