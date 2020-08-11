@@ -50,6 +50,7 @@ function init(){
       });
       // filter items on button click
       $('.filter_cat').click(function() {
+        $('.reset').addClass('active')
         console.log($(this))
         $('.filter_cat.active').removeClass('active')
         $(this).addClass('active')
@@ -61,6 +62,11 @@ function init(){
           }, 500);
         }
       });
+
+      $('.reset.active').click(function(){
+        $('.reset').removeClass('active')
+        $grid.isotope({ filter: '*' });
+      })
     })
 
     //$('body').on('click', '.teamItem', function(e){
