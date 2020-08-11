@@ -1,6 +1,6 @@
 <div class="portfolio_item">
-  <div class="portfolio_banner" style="background-imageL: url({item.assetUrl}?format=2500w); background-size: cover; background-position: center; background-repeat: no-repeat;">
-  
+  <div class="portfolio_banner" style="background-image: url({item.assetUrl}?format=2500w); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
   </div>
   <div class="portfolio_stats">
     <div class="stats_left">
