@@ -63,9 +63,9 @@ function init(){
         }
       });
 
-      $('.reset.active').click(function(){
+      $('.reset').click(function(){
+      $grid.isotope({ filter: '*' });
         $('.reset').removeClass('active')
-        $grid.isotope({ filter: '*' });
       })
     })
 
