@@ -109,8 +109,12 @@ function init(){
   //projects
   $('.portfolio_feed .search_section').slideToggle(0)
   $('.portfolio_feed').attr('data-mode', '1')
+  $('.filter_button').addClass('active')
   $('.search_button').click(function(){
     if($('.portfolio_feed').attr('data-mode') == '1'){
+
+        $('#teamFilterButtons .active').removeClass('active')
+        $('.filter_button').addClass('active')
       $('.portfolio_feed').attr('data-mode', '0')
       $('.portfolio_feed .search_section').slideToggle(300)
       $('.portfolio_feed .filter_section').slideToggle(300)
@@ -118,6 +122,9 @@ function init(){
   })
   $('.filter_button').click(function(){
     if($('.portfolio_feed').attr('data-mode') == '0'){
+
+        $('#teamFilterButtons .active').removeClass('active')
+        $('.search_button').addClass('active')
       $('.portfolio_feed').attr('data-mode', '1')
       $('.portfolio_feed .search_section').slideToggle(300)
       $('.portfolio_feed .filter_section').slideToggle(300)
@@ -135,6 +142,7 @@ function init(){
   // filter items on button click
   $('.filter').click(function() {
     $('.reset').addClass('active')
+    $('.filter_button').addClass('active')
     console.log($(this))
     $('.filter.active').removeClass('active')
     $(this).addClass('active')
