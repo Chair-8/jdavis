@@ -134,6 +134,7 @@ function init(){
   });
   // filter items on button click
   $('.filter').click(function() {
+    $('.reset').addClass('active')
     console.log($(this))
     $('.filter.active').removeClass('active')
     $(this).addClass('active')
