@@ -66,6 +66,7 @@ function init(){
       $('.reset').click(function(){
       $grid.isotope({ filter: '*' });
         $('.reset').removeClass('active')
+        $('.filter_cat').removeClass('active')
       })
     })
 
