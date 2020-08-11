@@ -77,12 +77,12 @@ function init(){
     $('.landingDots.vertical .dot').eq(0).addClass('active')
     $('.landingDots.horizontal .dot').eq(0).addClass('active')
 
-    $('#home-landing .left .more').eq(0).find('a').html('511 Faye<br>FNB Tower').attr('href', '/')
-    $('#home-landing .left .more').eq(1).find('a').html('Smoky<br>Hollow').attr('href', '/')
-    $('#home-landing .left .more').eq(2).find('a').html('Five City<br>Center').attr('href', '/')
-    $('#home-landing .left .more').eq(3).find('a').html('The<br>Parkwood').attr('href', '/')
-    $('#home-landing .left .more').eq(4).find('a').html('10<br>Arros').attr('href', '/')
-    $('#home-landing .left .more').eq(5).find('a').html('7th &<br>Walnut').attr('href', '/')
+    $('#home-landing .left .more').eq(0).find('a').html('511 Faye<br>FNB Tower').attr('href', '/projects/511-faye')
+    $('#home-landing .left .more').eq(1).find('a').html('Smoky<br>Hollow').attr('href', '/projects/smoky-hollow-1')
+    $('#home-landing .left .more').eq(2).find('a').html('Five City<br>Center').attr('href', '/projects/smoky-hollow-1-s8xdl')
+    $('#home-landing .left .more').eq(3).find('a').html('The<br>Parkwood').attr('href', '/projects/the-parkwood')
+    $('#home-landing .left .more').eq(4).find('a').html('10<br>Arros').attr('href', '/projects/10-arros')
+    $('#home-landing .left .more').eq(5).find('a').html('7th &<br>Walnut').attr('href', '/projects/7th-amp-walnut')
 
     $('.dot').click(function(){
       $('.landingDots.vertical .dot').removeClass('active')
