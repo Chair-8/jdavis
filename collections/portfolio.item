@@ -50,7 +50,7 @@ var url = window.location.href
 $.getJSON( url + '?format=json-pretty', function( data ) {
 console.log(data);
 data.item.customContent.gallery.forEach(function(a, i){
-$('.portfolio_image').eq(i).attr('style', 'background-image: url('+a.assetUrl+')')
+$('.portfolio_image').eq(i).attr('style', 'background-image: url('+a.assetUrl+'?format=2500w)')
 })
 })
 }
