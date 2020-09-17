@@ -10,22 +10,16 @@
     <div class="stats_right">
       <h2>Stats</h2>
       <div class="stats_row">
-        <h3>Awards</h3><p>{item.customContent.awards}</p>
-      </div>
-      <div class="stats_row">
-        <h3>Area</h3><p>{item.customContent.area}</p>
+        <h3>Locations</h3><p>{item.customContent.locations}</p>
       </div>
       <div class="stats_row">
         <h3>Completion</h3><p>{item.customContent.completion}</p>
       </div>
       <div class="stats_row">
+        <h3>Awards</h3><p>{item.customContent.awards}</p>
+      </div>
+      <div class="stats_row">
         <h3>Disciplines</h3><p>{item.customContent.disciplines}</p>
-      </div>
-      <div class="stats_row">
-        <h3>Photographer</h3><p>{item.customContent.photographer}</p>
-      </div>
-      <div class="stats_row">
-        <h3>Locations</h3><p>{item.customContent.locations}</p>
       </div>
     </div>
   </div>
