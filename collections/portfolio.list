@@ -21,16 +21,16 @@
           Discipline
         </div>
         <div class="filters">
-          <div class="filter">
+          <div class="filter pFClick">
             Planning
           </div>
-          <div class="filter">
+          <div class="filter aFClick">
             Architecture
           </div>
-          <div class="filter">
+          <div class="filter lFClick">
             Landscape Architecture
           </div>
-          <div class="filter">
+          <div class="filter iFClick">
             Interior Design
           </div>
         </div>
@@ -40,21 +40,33 @@
           Typology
         </div>
         <div class="filters">
-          <div class="filter">
+          <div class="filter mFClick">
             Multifamily
           </div>
-          <div class="filter">
+          <div class="filter oFClick">
             Office
           </div>
-          <div class="filter">
+          <div class="filter sFClick">
             Specified Housing
           </div>
-          <div class="filter">
+          <div class="filter muFClick">
             Mixed-Use
           </div>
         </div>
       </div>
-      <div class="column aF">
+
+      <div class="column oF">
+        <div class="filter_cat">
+          Status
+        </div>
+        <div class="filters">
+                        <div class="filter">
+                          Commercial Interiors
+                        </div>
+        </div>
+      </div>
+
+      <div class="column mF">
         <div class="filter_cat">
           Status
         </div>
@@ -68,37 +80,58 @@
               <div class="filter">
                 High-Rise
               </div>
+
+        </div>
+      </div>
+
+      <div class="column sF">
+        <div class="filter_cat">
+          Status
+        </div>
+        <div class="filters">
+
                 <div class="filter">
                   Condominiums + Townhomes
                 </div>
-                  <div class="filter">
+                  <div class="filter cFClick">
                     Student Housing
                   </div>
-                    <div class="filter">
+                    <div class="filter cFClick">
                       Senior Housing
                     </div>
-                      <div class="filter">
+                      <div class="filter cFClick">
                         Affordable Housing
                       </div>
+        </div>
+      </div>
+
+      <div class="column muF">
+        <div class="filter_cat">
+          Status
+        </div>
+        <div class="filters">
+
                         <div class="filter">
                           Commercial Interiors
                         </div>
         </div>
       </div>
-      <div class="column aF">
+
+      <div class="column cF">
         <div class="filter_cat">
           Status
         </div>
         <div class="filters">
-          <div class="filter">
-            Active Adult
-          </div>
-            <div class="filter">
-            Continuing Care
-            </div>
-              <div class="filter">
-              Assisted Living
-              </div>
+
+                <div class="filter cFClick">
+                  Active Adult
+                </div>
+                  <div class="filter cFClick">
+                    Continuing Care
+                  </div>
+                    <div class="filter cFClick">
+                      Assisted Living
+                    </div>
         </div>
       </div>
 
@@ -122,13 +155,13 @@
                   <div class="filter">
                     Commerical Interiors
                   </div>
-                    <div class="filter">
+                    <div class="filter rFClick">
                       Residential Interiors
                     </div>
         </div>
       </div>
 
-      <div class="column lF">
+      <div class="column rF">
         <div class="filter_cat">
           Typology
         </div>
@@ -153,7 +186,7 @@
           <div class="filter">
             Commercial
           </div>
-            <div class="filter">
+            <div class="filter rFClick">
               Residential Interiors
             </div>
         </div>
