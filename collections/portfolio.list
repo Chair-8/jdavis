@@ -155,13 +155,30 @@
                   <div class="filter">
                     Commerical Interiors
                   </div>
-                    <div class="filter rFClick">
+                    <div class="filter irFClick">
                       Residential Interiors
                     </div>
         </div>
       </div>
 
-      <div class="column rF">
+      <div class="column arF">
+        <div class="filter_cat">
+          Typology
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Low-Rise
+          </div>
+            <div class="filter">
+              Mid-Rise
+            </div>
+              <div class="filter">
+                High-Rise
+              </div>
+        </div>
+      </div>
+
+      <div class="column irF">
         <div class="filter_cat">
           Typology
         </div>
