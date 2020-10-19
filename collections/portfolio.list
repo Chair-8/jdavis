@@ -18,7 +18,7 @@
     <div class="filter_section">
       <div class="column">
         <div class="filter_cat">
-          Discipline
+          Level 1
         </div>
         <div class="filters">
           <div class="filter pFClick">
@@ -37,7 +37,7 @@
       </div>
       <div class="column aF">
         <div class="filter_cat">
-          Typology
+          Level 2
         </div>
         <div class="filters">
           <div class="filter mFClick">
@@ -57,7 +57,7 @@
 
       <div class="column oF">
         <div class="filter_cat">
-          Status
+          Level 3
         </div>
         <div class="filters">
                         <div class="filter">
@@ -68,7 +68,7 @@
 
       <div class="column mF">
         <div class="filter_cat">
-          Status
+          Level 4
         </div>
         <div class="filters">
           <div class="filter">
@@ -86,7 +86,7 @@
 
       <div class="column sF">
         <div class="filter_cat">
-          Status
+          Level 3
         </div>
         <div class="filters">
 
@@ -107,7 +107,7 @@
 
       <div class="column muF">
         <div class="filter_cat">
-          Status
+          Level 3
         </div>
         <div class="filters">
 
@@ -119,7 +119,7 @@
 
       <div class="column cF">
         <div class="filter_cat">
-          Status
+          Level 4
         </div>
         <div class="filters">
 
@@ -137,7 +137,7 @@
 
       <div class="column lF">
         <div class="filter_cat">
-          Typology
+          Level 2
         </div>
         <div class="filters">
           <div class="filter lFClick">
@@ -157,7 +157,7 @@
 
       <div class="column iF">
         <div class="filter_cat">
-          Typology
+          Level 2
         </div>
         <div class="filters">
           <div class="filter iFClick">
@@ -171,7 +171,7 @@
 
       <div class="column rF">
         <div class="filter_cat">
-          Typology
+          Level 4
         </div>
         <div class="filters">
           <div class="filter">
@@ -188,7 +188,7 @@
 
       <div class="column pF">
         <div class="filter_cat">
-          Typology
+          Level 2
         </div>
         <div class="filters">
           <div class="filter">
@@ -199,12 +199,15 @@
 
       <div class="column">
         <div class="filter_cat">
-          Details
+          Project Type
         </div>
         <div class="filters">
           <div class="filter">
-            Case Studies
+            All
           </div>
+            <div class="filter">
+              Case Studies
+            </div>
           <div class="filter">
             Projects
           </div>
