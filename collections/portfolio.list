@@ -21,16 +21,16 @@
           Discipline
         </div>
         <div class="filters">
-          <div class="filter" data-filter=".planning">
+          <div class="filter">
             Planning
           </div>
-          <div class="filter" data-filter=".architecture">
+          <div class="filter">
             Architecture
           </div>
-          <div class="filter" data-filter=".landscape">
+          <div class="filter">
             Landscape Architecture
           </div>
-          <div class="filter" data-filter=".interior">
+          <div class="filter">
             Interior Design
           </div>
         </div>
@@ -175,10 +175,10 @@
           Details
         </div>
         <div class="filters">
-          <div class="filter" data-filter=".caseStudy">
+          <div class="filter">
             Case Studies
           </div>
-          <div class="filter" data-filter=".project">
+          <div class="filter">
             Projects
           </div>
         </div>
