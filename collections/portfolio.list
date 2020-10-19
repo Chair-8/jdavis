@@ -155,6 +155,20 @@
         </div>
       </div>
 
+      <div class="column iF">
+        <div class="filter_cat">
+          Typology
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Commercial
+          </div>
+            <div class="filter rFClick">
+              Residential Interiors
+            </div>
+        </div>
+      </div>
+
       <div class="column rF">
         <div class="filter_cat">
           Typology
@@ -169,20 +183,6 @@
               <div class="filter">
                 High-Rise
               </div>
-        </div>
-      </div>
-
-      <div class="column iF">
-        <div class="filter_cat">
-          Typology
-        </div>
-        <div class="filters">
-          <div class="filter">
-            Commercial
-          </div>
-            <div class="filter rFClick">
-              Residential Interiors
-            </div>
         </div>
       </div>
 
