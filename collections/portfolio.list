@@ -90,7 +90,7 @@
         </div>
         <div class="filters">
 
-                <div class="filter">
+                <div class="filter sFClick">
                   Condominiums + Townhomes
                 </div>
                   <div class="filter cFClick">
@@ -140,45 +140,22 @@
           Typology
         </div>
         <div class="filters">
-          <div class="filter">
+          <div class="filter lFClick">
             Master Planning
           </div>
-            <div class="filter">
+            <div class="filter lFClick">
               Urban Design
             </div>
-              <div class="filter">
+              <div class="filter lFClick">
                 Amenity + Resort
               </div>
-                <div class="filter">
+                <div class="filter lFClick">
                   Parks + Recreation
                 </div>
-                  <div class="filter">
-                    Commerical Interiors
-                  </div>
-                    <div class="filter irFClick">
-                      Residential Interiors
-                    </div>
         </div>
       </div>
 
-      <div class="column arF">
-        <div class="filter_cat">
-          Typology
-        </div>
-        <div class="filters">
-          <div class="filter">
-            Low-Rise
-          </div>
-            <div class="filter">
-              Mid-Rise
-            </div>
-              <div class="filter">
-                High-Rise
-              </div>
-        </div>
-      </div>
-
-      <div class="column irF">
+      <div class="column rF">
         <div class="filter_cat">
           Typology
         </div>
