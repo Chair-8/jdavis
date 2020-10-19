@@ -144,7 +144,7 @@ function init(){
     $('.reset').addClass('active')
     $('.filter_button').addClass('active')
     console.log($(this))
-    $('.filter.active').removeClass('active')
+    $(this).parent().find('.active').removeClass('active')
     $(this).addClass('active')
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
