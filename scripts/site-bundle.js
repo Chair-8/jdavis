@@ -98,7 +98,7 @@ function init(){
     })
 
     $('.Mobile-bar--top').click(function(){
-      $('#home-landing').toggleClass('small')
+      //$('#home-landing').toggleClass('small')
     })
 
 
