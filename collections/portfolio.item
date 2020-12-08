@@ -42,7 +42,7 @@
   <div class="project_content">
     <div class="grid-container">
     {.repeated section item.customContent.projectGallery}
-    <div class=" content-fill"><img {@|image-meta} /></div>
+    <div class=" content-fill"><img class="content-fill" {@|image-meta} /></div>
     {.end}
     </div>
   </div>
