@@ -44,7 +44,8 @@
     {.repeated section item.customContent.projectGallery}
     <div class=" content-fill"><img class="content-fill" {@|image-meta} /></div>
     {@|image-meta}
-    {item|image-meta}
+    {@|image-meta.data-src}
+    {@|data-src}
     {.end}
     </div>
   </div>
