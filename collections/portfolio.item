@@ -19,7 +19,7 @@
         <h3>Details</h3><p>{item.customContent.locations}</p>
       </div>
       <div class="stats_row">
-        <h3>Services</h3><p>{item.customContent.disciplines}</p>
+        <h3>Services</h3>{item.customContent.disciplines.html}
       </div>
       <div class="stats_row">
         <h3>Completion</h3><p>{item.customContent.completion}</p>
