@@ -41,7 +41,7 @@
   </div>
   <div class="project_content">
     <div class="grid-container">
-    {.repeated item.customContent.projectGallery.items}
+    {.repeated section item.customContent.projectGallery}
     a
     {.end}
     </div>
