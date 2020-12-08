@@ -47,6 +47,15 @@
     {.end}
     </div>
   </div>
+  <div class="showAll">Show All</div>
+  <div class="project_content_all">
+    <div class="grid-container">
+    {.repeated section item.customContent.projectGalleryAll}
+    <div class=" content-fill" style="background-image: url({@.assetUrl})"></div>
+
+    {.end}
+    </div>
+  </div>
 </div>
 
 <script>
@@ -58,6 +67,8 @@ data.item.customContent.gallery.forEach(function(a, i){
 $('.portfolio_image').eq(i).attr('style', 'background-image: url('+a.assetUrl+'?format=2500w)')
 })
 })
+$('.project_content_all').slideToggle(0)
+$('.showAll').click(function(){$('.project_content_all').slideToggle(400); $('.showAll').slideToggle(0)})
 }
 init()
 </script>
