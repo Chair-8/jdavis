@@ -42,9 +42,8 @@
   <div class="project_content">
     <div class="grid-container">
     {.repeated section item.customContent.projectGallery}
-    <div class=" content-fill"><img class="content-fill" {@|image-meta} /></div>
-    {@.assetUrl}
-    {@|image-meta.data-src}
+    <div class=" content-fill" style="background-image: url({@.assetUrl})"></div>
+
     {.end}
     </div>
   </div>
