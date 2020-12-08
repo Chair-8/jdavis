@@ -39,6 +39,13 @@
       <div class="text_result"><strong>The Result</strong><br>{item.customContent.result}</div>
     </div>
   </div>
+  <div class="project_content">
+    <div class="grid-container">
+    {.repeated item.customContent.projectGallery.items}
+    a
+    {.end}
+    </div>
+  </div>
 </div>
 
 <script>
