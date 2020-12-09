@@ -47,7 +47,7 @@
     {.end}
     </div>
   </div>
-  <div class="showAll">Show All</div>
+  <div class="showAll"><p>Show All</p></div>
   <div class="project_content_all">
     <div class="grid-container">
     {.repeated section item.customContent.projectGalleryAll}
