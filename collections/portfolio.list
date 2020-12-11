@@ -4,8 +4,7 @@
       <h1>Projects</h1>
       <p>At JDavis, we pride ourselves on providing full-service design solutions for our clients across a variety of product types. With each project our goal and mission is to ‘Build Value and Pass it On’.  Value for our clients, for the end users and for those who come after us. Our unique approach combines the talents of seasoned Architects, Designers,  with the sole intent to deliver an experience like none other in our industry.  We invite you to take a look at our work below.</p>
       <div class="searchFilter_buttons">
-        <h3 class="search_button">Search</h3>
-        <h3 class="filter_button">Filter<span class="reset"></span></h3>
+        <h3>View Projects<span class="arrow"></span></h3>
       </div>
     </div>
     <div class="right">
@@ -15,6 +14,9 @@
     </div>
   </div>
   <div class="searchFilter_section">
+  <div class="searchFilter_buttons">
+    <h3 class="filter_button">Filter<span class="reset"></span></h3>
+  </div>
     <div class="filter_section">
       <div class="column">
         <div class="filter_cat">
