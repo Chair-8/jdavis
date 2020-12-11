@@ -79,6 +79,7 @@ var $th = $(this)
     $th.addClass(b)
   })
 })
+})
 }
 init()
 </script>
