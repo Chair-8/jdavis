@@ -14,9 +14,6 @@
     </div>
   </div>
   <div class="searchFilter_section">
-  <div class="searchFilter_buttons">
-    <h3 class="filter_button">Filter<span class="reset"></span></h3>
-  </div>
     <div class="filter_section">
       <div class="column">
         <div class="filter_cat">
