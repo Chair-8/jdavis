@@ -70,11 +70,6 @@ $('.portfolio_image').eq(i).attr('style', 'background-image: url('+a.assetUrl+'?
 })
 $('.project_content_all').slideToggle(0)
 $('.showAll').click(function(){$('.project_content_all').slideToggle(400); $('.showAll').slideToggle(0)})
-}
-init()
-</script>
-
-<script>
 $('.portfolio_item').each(function(){
 var t = $(this).attr('class').split(' ')[1];
 var $th = $(this)
@@ -84,4 +79,10 @@ var $th = $(this)
     $th.addClass(a)
   })
 })
+}
+init()
+</script>
+
+<script>
+
 </script>
