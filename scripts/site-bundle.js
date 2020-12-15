@@ -148,7 +148,9 @@ function init(){
     $(this).addClass('active')
     var clevel = parseInt($(this).parent('column').attr('data-level'))
     $('.column').each(function(){
+      console.log(parseInt($(this).attr('data-level')), clevel)
       if(parseInt($(this).attr('data-level')) > clevel){
+
         $(this).find('.filter').removeClass('active')
       }
     })
