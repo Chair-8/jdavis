@@ -146,6 +146,12 @@ function init(){
     console.log($(this))
     $(this).parent().find('.active').removeClass('active')
     $(this).addClass('active')
+    var clevel = $(this).parent().prev().attr('data-level')
+    $('.column').each(function(){
+      if($(this).attr('data-level') > clevel){
+        $(this).find('.filter').removeClass('active')
+      }
+    })
     var filterValue = ''
     $('.active').each(function(){
       if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "all"){

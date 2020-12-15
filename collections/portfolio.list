@@ -15,7 +15,7 @@
   </div>
   <div class="searchFilter_section">
     <div class="filter_section">
-      <div class="column">
+      <div class="column" data-level="1">
         <div class="filter_cat">
           Level 1
         </div>
@@ -34,7 +34,7 @@
           </div>
         </div>
       </div>
-      <div class="column aF">
+      <div class="column aF" data-level="2">
         <div class="filter_cat">
           Level 2
         </div>
@@ -54,7 +54,7 @@
         </div>
       </div>
 
-      <div class="column oF">
+      <div class="column oF" data-level="3">
         <div class="filter_cat">
           Level 3
         </div>
@@ -65,7 +65,7 @@
         </div>
       </div>
 
-      <div class="column mF">
+      <div class="column mF" data-level="3">
         <div class="filter_cat">
           Level 3
         </div>
@@ -83,7 +83,7 @@
         </div>
       </div>
 
-      <div class="column sF">
+      <div class="column sF" data-level="3">
         <div class="filter_cat">
           Level 3
         </div>
@@ -104,7 +104,7 @@
         </div>
       </div>
 
-      <div class="column muF">
+      <div class="column muF" data-level="3">
         <div class="filter_cat">
           Level 3
         </div>
@@ -116,7 +116,7 @@
         </div>
       </div>
 
-      <div class="column cF">
+      <div class="column cF" data-level="4">
         <div class="filter_cat">
           Level 4
         </div>
@@ -134,7 +134,7 @@
         </div>
       </div>
 
-      <div class="column lF">
+      <div class="column lF" data-level="2">
         <div class="filter_cat">
           Level 2
         </div>
@@ -154,7 +154,7 @@
         </div>
       </div>
 
-      <div class="column iF">
+      <div class="column iF" data-level="2">
         <div class="filter_cat">
           Level 2
         </div>
@@ -168,7 +168,7 @@
         </div>
       </div>
 
-      <div class="column rF">
+      <div class="column rF" data-level="3">
         <div class="filter_cat">
           Level 3
         </div>
@@ -185,7 +185,7 @@
         </div>
       </div>
 
-      <div class="column pF">
+      <div class="column pF" data-level="2">
         <div class="filter_cat">
           Level 2
         </div>
