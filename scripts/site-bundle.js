@@ -66,8 +66,8 @@ function init(){
     $('#home-landing .slide').eq(0).find('.image-slide-title').wrapAll('<div class="left"></div>')
     $('#home-landing .slide').each(function(i){
 
-        $(this).find('.image-slide-title').appendTo($('#home-landing .slide').eq(0).find('.left'))
-        $(this).find('.image-slide-anchor').appendTo($('#home-landing .slide').eq(0).find('.right'))
+      $(this).find('.image-slide-title').appendTo($('#home-landing .slide').eq(0).find('.left'))
+      $(this).find('.image-slide-anchor').appendTo($('#home-landing .slide').eq(0).find('.right'))
 
       $('#home-landing .slide').eq(0).find('.left').append('<h3 class="more"><a href="'+$(this).attr("data-url")+'">Smoky<br>Hollow</a></h3>')
     })
@@ -113,8 +113,8 @@ function init(){
   $('.search_button').click(function(){
     if($('.portfolio_feed').attr('data-mode') == '1'){
 
-        $('.searchFilter_buttons .active').removeClass('active')
-        $('.search_button').addClass('active')
+      $('.searchFilter_buttons .active').removeClass('active')
+      $('.search_button').addClass('active')
       $('.portfolio_feed').attr('data-mode', '0')
       $('.portfolio_feed .search_section').slideToggle(300)
       $('.portfolio_feed .filter_section').slideToggle(300)
@@ -123,8 +123,8 @@ function init(){
   $('.filter_button').click(function(){
     if($('.portfolio_feed').attr('data-mode') == '0'){
 
-        $('.searchFilter_buttons .active').removeClass('active')
-        $('.filter_button').addClass('active')
+      $('.searchFilter_buttons .active').removeClass('active')
+      $('.filter_button').addClass('active')
       $('.portfolio_feed').attr('data-mode', '1')
       $('.portfolio_feed .search_section').slideToggle(300)
       $('.portfolio_feed .filter_section').slideToggle(300)
@@ -148,7 +148,15 @@ function init(){
     $(this).addClass('active')
     var filterValue = ''
     $('.active').each(function(){
-      filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
+      if($(this).text() == "All"){
+
+      }else if($(this).text() == "Case Studies"){
+        filterValue = filterValue + '.casestudy'
+      }else if($(this).text() == "Projects"){
+        filterValue = filterValue + '.project'
+      }else{
+        filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
+      }
     });
     $grid.isotope({ filter: filterValue });
     if($(window).width() < 850){
