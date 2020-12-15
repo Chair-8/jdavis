@@ -148,7 +148,7 @@ function init(){
     $(this).addClass('active')
     var filterValue = ''
     $('.active').each(function(){
-      if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "All"){
+      if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "all"){
 
       }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "casestudies"){
         filterValue = filterValue + '.casestudy'
