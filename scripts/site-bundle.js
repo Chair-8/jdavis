@@ -146,7 +146,10 @@ function init(){
     console.log($(this))
     $(this).parent().find('.active').removeClass('active')
     $(this).addClass('active')
-    var filterValue = $(this).attr('data-filter');
+    var filterValue = ''
+    $('.active').each(function(){
+      filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
+    });
     $grid.isotope({ filter: filterValue });
     if($(window).width() < 850){
       $('html, body').stop().animate({
