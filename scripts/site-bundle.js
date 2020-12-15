@@ -158,6 +158,7 @@ function init(){
         filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
       }
     });
+    console.log(filterValue)
     $grid.isotope({ filter: filterValue });
     if($(window).width() < 850){
       $('html, body').stop().animate({
