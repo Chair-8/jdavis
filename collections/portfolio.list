@@ -201,7 +201,7 @@
           Project Type
         </div>
         <div class="filters">
-          <div class="filter">
+          <div class="filter active">
             All
           </div>
             <div class="filter">
