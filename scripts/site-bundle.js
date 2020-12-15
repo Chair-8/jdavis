@@ -148,11 +148,11 @@ function init(){
     $(this).addClass('active')
     var filterValue = ''
     $('.active').each(function(){
-      if($(this).text() == "All"){
+      if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "All"){
 
-      }else if($(this).text() == "Case Studies"){
+      }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "casestudies"){
         filterValue = filterValue + '.casestudy'
-      }else if($(this).text() == "Projects"){
+      }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "projects"){
         filterValue = filterValue + '.project'
       }else{
         filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
