@@ -20,16 +20,16 @@
           Level 1
         </div>
         <div class="filters">
-          <div class="filter pFClick" data-filter=".planning">
+          <div class="filter pFClick">
             Planning
           </div>
-          <div class="filter aFClick" data-filter=".architecture">
+          <div class="filter aFClick">
             Architecture
           </div>
-          <div class="filter lFClick" data-filter=".landscapearchitecture">
+          <div class="filter lFClick">
             Landscape Architecture
           </div>
-          <div class="filter iFClick" data-filter=".interiordesign">
+          <div class="filter iFClick">
             Interior Design
           </div>
         </div>
@@ -139,16 +139,16 @@
           Level 2
         </div>
         <div class="filters">
-          <div class="filter lFClick" data-filter=".landscapearchitecture.masterplanning">
+          <div class="filter lFClick">
             Master Planning
           </div>
-            <div class="filter lFClick" data-filter=".landscapearchitecture.urbandesign">
+            <div class="filter lFClick">
               Urban Design
             </div>
-              <div class="filter lFClick" data-filter=".landscapearchitecture.amenityresort">
+              <div class="filter lFClick">
                 Amenity + Resort
               </div>
-                <div class="filter lFClick" data-filter=".landscapearchitecture.parksrecreation">
+                <div class="filter lFClick">
                   Parks + Recreation
                 </div>
         </div>
@@ -201,13 +201,13 @@
           Project Type
         </div>
         <div class="filters">
-          <div class="filter" data-filter="*">
+          <div class="filter">
             All
           </div>
-            <div class="filter" data-filter=".casestudy">
+            <div class="filter">
               Case Studies
             </div>
-          <div class="filter" data-filter=".project">
+          <div class="filter">
             Projects
           </div>
         </div>
