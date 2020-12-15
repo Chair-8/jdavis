@@ -73,10 +73,10 @@
           <div class="filter">
             Low-Rise
           </div>
-            <div class="filter" data-filter=".landscapearchitecture.midrise">
+            <div class="filter">
               Mid-Rise
             </div>
-              <div class="filter" data-filter=".landscapearchitecture.midrise">
+              <div class="filter">
                 High-Rise
               </div>
 
@@ -139,16 +139,16 @@
           Level 2
         </div>
         <div class="filters">
-          <div class="filter lFClick">
+          <div class="filter lFClick" data-filter=".landscapearchitecture.masterplanning">
             Master Planning
           </div>
-            <div class="filter lFClick">
+            <div class="filter lFClick" data-filter=".landscapearchitecture.urbandesign">
               Urban Design
             </div>
-              <div class="filter lFClick">
+              <div class="filter lFClick" data-filter=".landscapearchitecture.amenityresort">
                 Amenity + Resort
               </div>
-                <div class="filter lFClick">
+                <div class="filter lFClick" data-filter=".landscapearchitecture.parksrecreation">
                   Parks + Recreation
                 </div>
         </div>
