@@ -76,7 +76,7 @@ var $th = $(this)
   $(this).attr('class').split(' ').forEach(function(a, i){
 a.split(',').forEach(function(b, i){
     console.log(b)
-    $th.addClass(b)
+    $th.addClass(b.replace(/[^a-zA-Z ]/g, ""))
   })
 })
 })
