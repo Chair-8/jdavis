@@ -80,7 +80,7 @@ a.split(',').forEach(function(b, i){
     if(b == "portfolio_item"){
     $th.addClass('portfolio_item')
     }else{
-    $th.addClass(b.replace(/[^a-zA-Z ]/g, "").toLowerCase())
+    $th.addClass(b.replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase())
     }
   })
 })
