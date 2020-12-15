@@ -20,16 +20,16 @@
           Level 1
         </div>
         <div class="filters">
-          <div class="filter pFClick">
+          <div class="filter pFClick" data-filter=".planning">
             Planning
           </div>
-          <div class="filter aFClick">
+          <div class="filter aFClick" data-filter=".architecture">
             Architecture
           </div>
-          <div class="filter lFClick">
+          <div class="filter lFClick" data-filter=".landscapearchitecture">
             Landscape Architecture
           </div>
-          <div class="filter iFClick">
+          <div class="filter iFClick" data-filter=".interiordesign">
             Interior Design
           </div>
         </div>
