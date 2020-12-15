@@ -246,8 +246,11 @@ var $th = $(this)
   $th.removeClass(a)
 a.split(',').forEach(function(b, i){
     console.log(b)
-    $th.removeClass(t)
+    if(b == "portfolio_item"){}
+    $th.addClass('portfolio_item')
+    }else{
     $th.addClass(b.replace(/[^a-zA-Z ]/g, ""))
+    }
   })
 })
 })
