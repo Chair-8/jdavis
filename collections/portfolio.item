@@ -10,19 +10,19 @@
     <div class="stats_right">
       <h2>Stats</h2>
       <div class="stats_row">
-        <h3>Client</h3><p>{item.customContent.area.html}</p>
+        <h3>Client</h3><span>{item.customContent.area.html}</span>
       </div>
       <div class="stats_row">
-        <h3>Use</h3><p>{item.customContent.awards.html}</p>
+        <h3>Use</h3><span>{item.customContent.awards.html}</span>
       </div>
       <div class="stats_row">
-        <h3>Details</h3><p>{item.customContent.locations.html}</p>
+        <h3>Details</h3><span>{item.customContent.locations.html}</span>
       </div>
       <div class="stats_row">
         <h3>Services</h3><span>{item.customContent.disciplines.html}</span>
       </div>
       <div class="stats_row">
-        <h3>Completion</h3><p>{item.customContent.completion.html}</p>
+        <h3>Completion</h3><span>{item.customContent.completion.html}</span>
       </div>
     </div>
   </div>
