@@ -10,19 +10,19 @@
     <div class="stats_right">
       <h2>Stats</h2>
       <div class="stats_row">
-        <h3>Client</h3><p>{item.customContent.area}</p>
+        <h3>Client</h3><p>{item.customContent.area.html}</p>
       </div>
       <div class="stats_row">
-        <h3>Use</h3><p>{item.customContent.awards}</p>
+        <h3>Use</h3><p>{item.customContent.awards.html}</p>
       </div>
       <div class="stats_row">
-        <h3>Details</h3><p>{item.customContent.locations}</p>
+        <h3>Details</h3><p>{item.customContent.locations.html}</p>
       </div>
       <div class="stats_row">
         <h3>Services</h3><span>{item.customContent.disciplines.html}</span>
       </div>
       <div class="stats_row">
-        <h3>Completion</h3><p>{item.customContent.completion}</p>
+        <h3>Completion</h3><p>{item.customContent.completion.html}</p>
       </div>
     </div>
   </div>
@@ -31,12 +31,12 @@
       <div class="portfolio_image image_one"></div>
       <div class="portfolio_image image_two"></div>
       <div class="portfolio_image image_three"></div>
-      <div class="text_problem"><strong>The Problem</strong><br>{item.customContent.problem}</div>
+      <div class="text_problem"><strong>The Problem</strong><br>{item.customContent.problem.html}</div>
       <div class="portfolio_image image_four"></div>
-      <div class="text_solution"><strong>The Solution</strong><br>{item.customContent.solution}</div>
+      <div class="text_solution"><strong>The Solution</strong><br>{item.customContent.solution.html}</div>
       <div class="portfolio_image image_five"></div>
       <div class="portfolio_image image_six"></div>
-      <div class="text_result"><strong>The Result</strong><br>{item.customContent.result}</div>
+      <div class="text_result"><strong>The Result</strong><br>{item.customContent.result.html}</div>
     </div>
   </div>
   <div class="project_content">
