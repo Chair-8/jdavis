@@ -165,6 +165,8 @@ function init(){
         filterValue = filterValue + '.project'
       }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "commercial"){
         filterValue = filterValue + '.commercialinterior'
+      }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "condominiumstownhomes"){
+        filterValue = filterValue + '.condominiums'
       }else{
         filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
       }
