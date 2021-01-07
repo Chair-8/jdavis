@@ -163,6 +163,8 @@ function init(){
         filterValue = filterValue + '.casestudy'
       }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "projects"){
         filterValue = filterValue + '.project'
+      }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "commercialinteriors"){
+        filterValue = filterValue + '.commercial'
       }else{
         filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
       }
