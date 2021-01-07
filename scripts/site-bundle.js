@@ -156,6 +156,7 @@ function init(){
     })
     var filterValue = ''
     $('.active').each(function(){
+      console.log($(this))
       if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "all"){
 
       }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "casestudies"){
