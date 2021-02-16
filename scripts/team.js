@@ -1,7 +1,8 @@
 function init(){
+  $.ajaxSetup({ cache: false });
   if($('teamfeed').length && $('teamfeed').html() == ""){
     var url = 'https://' + window.location.host + '/team'
-    $.getJSON( url + '?format=json-pretty', function( data ), false {
+    $.getJSON( url + '?format=json-pretty', function( data ) {
       console.log(data);
       data.items.forEach(function(e, i){
         var cats = '';
