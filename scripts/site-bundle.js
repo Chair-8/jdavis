@@ -35,7 +35,7 @@ function init(){
       if($(window).scrollTop() > $('#home-landing').height() - 90){
         $('body').addClass('showHeader')
       }else{
-        $('body').removeClass('showHeader')
+      //  $('body').removeClass('showHeader')
       }
     })
     $('#forceDown').click(function(){
@@ -43,6 +43,7 @@ function init(){
       $(document).off('mousewheel')
       setTimeout(function(){
         $('body').attr('style', 'overflow: scroll')
+        $('body').addClass('showHeader')
       }, 1000)
     })
     $(document).on('mousewheel', function(e) {
@@ -52,6 +53,7 @@ function init(){
         $(document).off('mousewheel')
         setTimeout(function(){
           $('body').attr('style', 'overflow: scroll')
+          $('body').addClass('showHeader')
         }, 1000)
       }
     });
