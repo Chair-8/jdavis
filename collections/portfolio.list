@@ -89,13 +89,13 @@
                 <div class="filter sFClick">
                   Condominiums + Townhomes
                 </div>
-                  <div class="filter">
+                  <div class="filter sClear">
                     Student Housing
                   </div>
                     <div class="filter cFClick">
                       Senior Housing
                     </div>
-                      <div class="filter">
+                      <div class="filter sClear">
                         Affordable Housing
                       </div>
         </div>
