@@ -191,8 +191,17 @@
         </div>
         <div class="filters">
           <div class="filter">
-            Schematic Design
+            Community Planning
           </div>
+            <div class="filter">
+              Master Planning
+            </div>
+              <div class="filter">
+                Schematic Design
+              </div>
+                <div class="filter">
+                  Urban Design
+                </div>
         </div>
       </div>
 
