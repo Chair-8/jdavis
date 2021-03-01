@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', init);
 window.addEventListener('mercury:load', init);
 
 function init(){
-
+$.ajaxSetup({ cache: false });
   if($('#collection-5eeb4f72f0932734f2f9ebd8').length){
     var url = "/projects-1/test-project?";
     $.getJSON( 'https://' + window.location.hostname + url + '&format=json', function( data ) {
