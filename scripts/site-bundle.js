@@ -46,7 +46,7 @@ $.ajaxSetup({ cache: false });
         $('body').addClass('showHeader')
       }, 1000)
     })
-    if($(window).width() > 767){
+    if($(window).width() > 1200){
     $(document).on('mousewheel', function(e) {
       var delta = e.originalEvent.wheelDelta;
       if(delta < 0){
