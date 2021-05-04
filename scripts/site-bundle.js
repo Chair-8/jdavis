@@ -184,11 +184,6 @@ $.ajaxSetup({ cache: false });
     });
     console.log('hh', filterValue)
     $grid.isotope({ filter: filterValue });
-    if($(window).width() < 850){
-      $('html, body').stop().animate({
-        scrollTop: $(".portfolio_items").offset().top - 30
-      }, 500);
-    }
   });
 
   //TEAM
