@@ -12,9 +12,6 @@ $.ajaxSetup({ cache: false });
   if($('#collection-5eeb4f72f0932734f2f9ebd8').length){
     var url = "/projects-1/test-project?";
     $.getJSON( 'https://' + window.location.hostname + url + '&format=json', function( data ) {
-      console.log(data)
-      console.log(data.item.body)
-      console.log(JSON.parse($(data.item.body).html().split('*')[1]))
     })
   }
   //menu
