@@ -158,12 +158,10 @@ $.ajaxSetup({ cache: false });
   $('.filter').click(function() {
     $('.reset').addClass('active')
     $('.filter_button').addClass('active')
-    console.log($(this))
     $(this).parent().find('.active').removeClass('active')
     $(this).addClass('active')
     var clevel = parseInt($(this).parents('.column').attr('data-level'))
     $('.column').each(function(){
-      console.log(parseInt($(this).attr('data-level')), clevel)
       if(parseInt($(this).attr('data-level')) > clevel){
 
         $(this).find('.filter').removeClass('active')
@@ -171,7 +169,6 @@ $.ajaxSetup({ cache: false });
     })
     var filterValue = ''
     $('.active').each(function(){
-      console.log($(this))
       if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "all"){
 
       }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "casestudies"){
@@ -186,7 +183,6 @@ $.ajaxSetup({ cache: false });
         filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
       }
     });
-    console.log('hh', filterValue)
     $grid.isotope({ filter: filterValue });
   });
 
