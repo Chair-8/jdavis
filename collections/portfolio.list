@@ -132,18 +132,12 @@
           Level 2
         </div>
         <div class="filters">
-          <div class="filter lFClick">
-            Master Planning
-          </div>
             <div class="filter lFClick">
               Urban Design
             </div>
               <div class="filter lFClick">
                 Amenity + Resort
               </div>
-                <div class="filter lFClick">
-                  Parks + Recreation
-                </div>
         </div>
       </div>
 
