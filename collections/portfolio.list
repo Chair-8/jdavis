@@ -80,21 +80,6 @@
         </div>
       </div>
 
-      <div class="column imF" data-level="3">
-        <div class="filter_cat">
-          Level 3
-        </div>
-        <div class="filters">
-            <div class="filter">
-              Mid-Rise
-            </div>
-              <div class="filter">
-                High-Rise
-              </div>
-
-        </div>
-      </div>
-
       <div class="column sF" data-level="3">
         <div class="filter_cat">
           Level 3
@@ -164,12 +149,45 @@
           <div class="filter imFClick">
             Multifamily
           </div>
-          <div class="filter cFClick">
+          <div class="filter icFClick">
             Senior Living
           </div>
           <div class="filter">
             Commercial
           </div>
+        </div>
+      </div>
+
+      <div class="column imF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+            <div class="filter">
+              Mid-Rise
+            </div>
+              <div class="filter">
+                High-Rise
+              </div>
+
+        </div>
+      </div>
+
+      <div class="column icF" data-level="4">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+
+                <div class="filter icFClick">
+                  Active Adult
+                </div>
+                  <div class="filter icFClick">
+                    Continuing Care
+                  </div>
+                    <div class="filter icFClick">
+                      Assisted Living
+                    </div>
         </div>
       </div>
 
