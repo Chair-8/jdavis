@@ -80,6 +80,21 @@
         </div>
       </div>
 
+      <div class="column imF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+            <div class="filter">
+              Mid-Rise
+            </div>
+              <div class="filter">
+                High-Rise
+              </div>
+
+        </div>
+      </div>
+
       <div class="column sF" data-level="3">
         <div class="filter_cat">
           Level 3
@@ -146,7 +161,7 @@
           Level 2
         </div>
         <div class="filters">
-          <div class="filter mFClick">
+          <div class="filter imFClick">
             Multifamily
           </div>
           <div class="filter cFClick">
