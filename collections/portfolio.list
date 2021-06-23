@@ -146,10 +146,13 @@
           Level 2
         </div>
         <div class="filters">
-          <div class="filter rFClick">
-            Residential / Hospitality
+          <div class="filter">
+            Multifamily
           </div>
-          <div class="filter iFClick">
+          <div class="filter">
+            Senior Living
+          </div>
+          <div class="filter">
             Commercial
           </div>
         </div>
