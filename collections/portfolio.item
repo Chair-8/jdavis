@@ -28,15 +28,27 @@
   </div>
   <div class="portfolio_content">
     <div class="grid-container">
+    <div class="grid-container--row">
       <div class="portfolio_image image_one"></div>
-      <div class="portfolio_image image_two"></div>
+      </div>
+        <div class="grid-container--row">
       <div class="portfolio_image image_three"></div>
+      <div class="grid-container--column">
+      <div class="portfolio_image image_two"></div>
       <div class="text_problem"><strong>The Problem</strong><br>{item.customContent.problem.html}</div>
+      </div>
+      </div>
+        <div class="grid-container--row">
+        <div class="grid-container--column">
+        <div class="text_solution"><strong>The Solution</strong><br>{item.customContent.solution.html}</div>
       <div class="portfolio_image image_four"></div>
-      <div class="text_solution"><strong>The Solution</strong><br>{item.customContent.solution.html}</div>
+      </div>
       <div class="portfolio_image image_five"></div>
+      </div>
+        <div class="grid-container--row">
+        <div class="text_result"><strong>The Result</strong><br>{item.customContent.result.html}</div>
       <div class="portfolio_image image_six"></div>
-      <div class="text_result"><strong>The Result</strong><br>{item.customContent.result.html}</div>
+      </div>
     </div>
   </div>
   <div class="project_content">
