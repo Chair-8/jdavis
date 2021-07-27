@@ -261,7 +261,7 @@ a.split(',').forEach(function(b, i){
   })
 })
 if($(this).hasClass('casestudy')){
-$(this).find('.entry-more-link a').text(View Case Study)
+$(this).find('.entry-more-link a').text('View Case Study')
 }
 })
 </script>
