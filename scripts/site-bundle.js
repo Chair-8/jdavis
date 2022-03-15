@@ -86,7 +86,7 @@ $.ajaxSetup({ cache: false });
     $('.landingDots.horizontal .dot').eq(0).addClass('active')
 
     $('#home-landing .left .more').eq(0).find('a').html('The Line at<br>Smoky Hollow').attr('href', '/projects/smoky-hollow-1')
-    $('#home-landing .left .more').eq(1).find('a').html('Park City South').attr('href', '/projects/smoky-hollow-1-sy2bt')
+    $('#home-landing .left .more').eq(1).find('a').html('Park City South').attr('href', '/projects/park-city-south')
     $('#home-landing .left .more').eq(2).find('a').html('St. Mary’s Square Apartments').attr('href', '/projects/saint-marys-square')
     $('#home-landing .left .more').eq(3).find('a').html('Solis Alston').attr('href', '/projects/solisalston')
     $('#home-landing .left .more').eq(4).find('a').html('511 Faye').attr('href', '/projects/511-faye')
