@@ -90,7 +90,7 @@ $.ajaxSetup({ cache: false });
     $('#home-landing .left .more').eq(2).find('a').html('St. Mary’s Square Apartments').attr('href', '/projects/saint-marys-square')
     $('#home-landing .left .more').eq(3).find('a').html('Solis Alston').attr('href', '/projects/solisalston')
     $('#home-landing .left .more').eq(4).find('a').html('511 Faye').attr('href', '/projects/511-faye')
-    $('#home-landing .left .more').eq(5).find('a').html('450 West Elm').attr('href', '/projects/450-west-elm')
+    $('#home-landing .left .more').eq(5).find('a').html('400 West Elm').attr('href', '/projects/400-west-elm')
     $('#home-landing .left .more').eq(6).find('a').html('Elliott Square').attr('href', '/projects/elliot-square')
     $('#home-landing .left .more').eq(7).find('a').html('FNB Tower').attr('href', '/projects/fnb-tower')
     $('#home-landing .left .more').eq(8).find('a').html('Five City Center').attr('href', '/projects/five-city-center')
