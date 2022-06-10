@@ -94,7 +94,7 @@ $.ajaxSetup({ cache: false });
     $('#home-landing .left .more').eq(6).find('a').html('Elliott Square').attr('href', '/projects/elliot-square')
     $('#home-landing .left .more').eq(7).find('a').html('FNB Tower').attr('href', '/projects/fnb-tower')
     $('#home-landing .left .more').eq(8).find('a').html('Five City Center').attr('href', '/projects/five-city-center')
-    $('#home-landing .left .more').eq(8).find('a').html('320 West South Street').attr('href', '/projects/320-west')
+    $('#home-landing .left .more').eq(9).find('a').html('320 West South Street').attr('href', '/projects/320-west')
 
     $('.dot').click(function(){
       $('.landingDots.vertical .dot').removeClass('active')
