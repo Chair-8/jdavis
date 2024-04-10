@@ -24,6 +24,9 @@
       <div class="stats_row">
         <h3>Completion</h3><span>{item.customContent.completion.html}</span>
       </div>
+      <div class="stats_row">
+        <h3>Case Study Link</h3><span>{item.customContent.photographer.html}</span>
+      </div>
     </div>
   </div>
   <div class="portfolio_content">
