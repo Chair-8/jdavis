@@ -7,6 +7,13 @@
         <h3>View Projects<span class="arrow"></span></h3>
       </div>
     </div>
+    <div class="left leftPast">
+      <h1>Past Projects</h1>
+      <p>At JDAVIS, we pride ourselves on providing full-service design solutions for our clients across a variety of product types. With each project our goal and mission is to ‘Build Value and Pass it On’.  Value for our clients, for the end users and for those who come after us. Our unique approach combines the talents of seasoned Architects, Designers,  with the sole intent to deliver an experience like none other in our industry.  We invite you to take a look at our work below.</p>
+      <div class="searchFilter_buttons">
+        <h3>View Projects<span class="arrow"></span></h3>
+      </div>
+    </div>
     <div class="right">
       <div class="rightImage">
 
