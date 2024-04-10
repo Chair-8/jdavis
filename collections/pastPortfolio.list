@@ -1,0 +1,267 @@
+<div class="portfolio_feed">
+  <div class="porfolio_landing">
+    <div class="left">
+      <h1>Past Projects</h1>
+      <p>At JDAVIS, we pride ourselves on providing full-service design solutions for our clients across a variety of product types. With each project our goal and mission is to ‘Build Value and Pass it On’.  Value for our clients, for the end users and for those who come after us. Our unique approach combines the talents of seasoned Architects, Designers,  with the sole intent to deliver an experience like none other in our industry.  We invite you to take a look at our work below.</p>
+      <div class="searchFilter_buttons">
+        <h3>View Projects<span class="arrow"></span></h3>
+      </div>
+    </div>
+    <div class="right">
+      <div class="rightImage">
+
+      </div>
+    </div>
+  </div>
+  <div class="searchFilter_section">
+    <div class="filter_section">
+      <div class="column" data-level="1">
+        <div class="filter_cat">
+          Level 1
+        </div>
+        <div class="filters">
+          <div class="filter pFClick">
+            Urban Design
+          </div>
+          <div class="filter aFClick">
+            Architecture
+          </div>
+          <div class="filter lFClick">
+            Landscape Architecture
+          </div>
+          <div class="filter iFClick">
+            Interior Design
+          </div>
+        </div>
+      </div>
+      <div class="column aF" data-level="2">
+        <div class="filter_cat">
+          Level 2
+        </div>
+        <div class="filters">
+          <div class="filter mFClick">
+            Multifamily
+          </div>
+          <div class="filter oFClick">
+            Office
+          </div>
+          <div class="filter sFClick">
+            Specified Housing
+          </div>
+          <div class="filter clear3">
+            Mixed-Use
+          </div>
+        </div>
+      </div>
+
+      <div class="column oF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+                        <div class="filter">
+                          Commercial Interiors
+                        </div>
+        </div>
+      </div>
+
+      <div class="column mF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+            <div class="filter">
+              Mid-Rise
+            </div>
+              <div class="filter">
+                High-Rise
+              </div>
+
+        </div>
+      </div>
+
+      <div class="column sF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+
+                <div class="filter sFClick">
+                  Condominiums + Townhomes
+                </div>
+                  <div class="filter sClear">
+                    Student Housing
+                  </div>
+                    <div class="filter cFClick">
+                      Senior Housing
+                    </div>
+                      <div class="filter sClear">
+                        Affordable Housing
+                      </div>
+        </div>
+      </div>
+
+      <div class="column muF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+        </div>
+      </div>
+
+      <div class="column cF" data-level="4">
+        <div class="filter_cat">
+          Level 4
+        </div>
+        <div class="filters">
+
+                <div class="filter cFClick">
+                  Active Adult
+                </div>
+                  <div class="filter cFClick">
+                    Continuing Care
+                  </div>
+                    <div class="filter cFClick">
+                      Assisted Living
+                    </div>
+        </div>
+      </div>
+
+      <div class="column lF" data-level="2">
+        <div class="filter_cat">
+          Level 2
+        </div>
+        <div class="filters">
+            <div class="filter lFClick">
+              Urban Design
+            </div>
+              <div class="filter lFClick">
+                Amenity + Resort
+              </div>
+        </div>
+      </div>
+
+      <div class="column iF" data-level="2">
+        <div class="filter_cat">
+          Level 2
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Multifamily
+          </div>
+          <div class="filter icFClick">
+            Senior Living
+          </div>
+          <div class="filter">
+            Commercial
+          </div>
+        </div>
+      </div>
+
+      <div class="column icF" data-level="4">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+
+                <div class="filter icFClick">
+                  Active Adult
+                </div>
+                  <div class="filter icFClick">
+                    Continuing Care
+                  </div>
+                    <div class="filter icFClick">
+                      Assisted Living
+                    </div>
+        </div>
+      </div>
+
+      <div class="column rF" data-level="3">
+        <div class="filter_cat">
+          Level 3
+        </div>
+        <div class="filters">
+            <div class="filter">
+              Mid-Rise
+            </div>
+              <div class="filter">
+                High-Rise
+              </div>
+        </div>
+      </div>
+
+      <div class="column pF" data-level="2">
+        <div class="filter_cat">
+          Level 2
+        </div>
+        <div class="filters">
+          <div class="filter">
+            Community Planning
+          </div>
+            <div class="filter">
+              Master Planning
+            </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="filter_cat">
+          Project Type
+        </div>
+        <div class="filters">
+          <div class="filter active">
+            All
+          </div>
+            <div class="filter">
+              Case Studies
+            </div>
+          <div class="filter">
+            Projects
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search_section">
+      <input type="text" name="searchInput" value="" placeholder="What are you looking for?"><button type="button">Search</button>
+    </div>
+  </div>
+</div>
+<div class="portfolio_items">
+  {.repeated section items}
+  <div class="portfolio_item {categories}">
+    {.excerpt?}
+      {.main-image?}
+      <div class="excerpt-thumb">
+        <a href="{fullUrl}" class="excerpt-image content-fill"><img {@|image-meta} /></a>
+      </div>
+      {.end}
+      <div class="item_overlay">
+      <h1 class="title">{title}</h1>
+      <div class="summary">{excerpt}</div>
+      <h3 class="entry-more-link"><a data-read-more="View Project" href="{fullUrl}">View Project</a></h3>
+      </div>
+    {.or}
+    {.end}
+  </div>
+  {.end}
+</div>
+
+<script>
+$('.portfolio_item').each(function(){
+var t = $(this).attr('class').split(' ')[1];
+var $th = $(this)
+  $(this).attr('class').split(' ').forEach(function(a, i){
+  $th.removeClass(a)
+a.split(',').forEach(function(b, i){
+    if(b == "portfolio_item"){
+    $th.addClass('portfolio_item')
+    }else{
+    $th.addClass(b.replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase())
+    }
+  })
+})
+if($(this).hasClass('casestudy')){
+$(this).find('.entry-more-link a').html('View<br>Case Study')
+}
+})
+</script>
