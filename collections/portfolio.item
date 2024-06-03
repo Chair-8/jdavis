@@ -5,7 +5,7 @@
   <div class="portfolio_stats">
     <div class="stats_left">
       <h1>{item.title}</h1>
-      {item.excerpt}
+      {item.excerpt} 
     </div>
     <div class="stats_right">
       <h2>Stats</h2>
