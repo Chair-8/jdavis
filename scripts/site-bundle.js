@@ -174,6 +174,8 @@ $.ajaxSetup({ cache: false });
         filterValue = filterValue + '.commercialinterior'
       }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "condominiumstownhomes"){
         filterValue = filterValue + '.condominiums'
+      }else if($(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase() == "integratedliving"){
+        filterValue = filterValue + '.specifiedhousing'
       }else{
         filterValue = filterValue + '.' + $(this).text().replace(/[^a-zA-Z ]/g, "").replace(/\s/g, '').toLowerCase()
       }
