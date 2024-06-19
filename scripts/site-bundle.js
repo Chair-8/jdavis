@@ -89,8 +89,8 @@ $.ajaxSetup({ cache: false });
     $('#home-landing .left .more').eq(1).find('a').html('Glenwood Place').attr('href', '/projects/glenwood-place')
     $('#home-landing .left .more').eq(2).find('a').html('Solis Hills').attr('href', '/projects/solis-hills')
     $('#home-landing .left .more').eq(3).find('a').html('Alta Federal Hill II').attr('href', '/projects/alta-federal-hill-ii')
-    $('#home-landing .left .more').eq(4).find('a').html('The Harden').attr('href', '/projects/the-halden')
-    $('#home-landing .left .more').eq(5).find('a').html('Lofts at Knightdale Station').attr('href', '/lofts-at-knightdale-station')
+    $('#home-landing .left .more').eq(4).find('a').html('The Halden').attr('href', '/projects/the-halden')
+    $('#home-landing .left .more').eq(5).find('a').html('Lofts at Knightdale Station').attr('href', '/projects/lofts-at-knightdale-station')
     $('#home-landing .left .more').eq(6).find('a').html('Vintage Jones Franklin').attr('href', '/projects/vintage-jones-franklin-raleigh')
     $('#home-landing .left .more').eq(7).find('a').html('Rockway Raleigh').attr('href', '/projects/rockway-raleigh')
 
