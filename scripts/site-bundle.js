@@ -85,14 +85,15 @@ $.ajaxSetup({ cache: false });
     $('.landingDots.vertical .dot').eq(0).addClass('active')
     $('.landingDots.horizontal .dot').eq(0).addClass('active')
 
-    $('#home-landing .left .more').eq(0).find('a').html('Maeve').attr('href', '/projects/maeve')
-    $('#home-landing .left .more').eq(1).find('a').html('Glenwood Place').attr('href', '/projects/glenwood-place')
-    $('#home-landing .left .more').eq(2).find('a').html('Solis Hills').attr('href', '/projects/solis-hills')
-    $('#home-landing .left .more').eq(3).find('a').html('Alta Federal Hill II').attr('href', '/projects/alta-federal-hill-ii')
-    $('#home-landing .left .more').eq(4).find('a').html('The Halden').attr('href', '/projects/the-halden')
-    $('#home-landing .left .more').eq(5).find('a').html('Lofts at Knightdale Station').attr('href', '/projects/lofts-at-knightdale-station')
-    $('#home-landing .left .more').eq(6).find('a').html('Vintage Jones Franklin').attr('href', '/projects/vintage-jones-franklin-raleigh')
-    $('#home-landing .left .more').eq(7).find('a').html('Rockway Raleigh').attr('href', '/projects/rockway-raleigh')
+    $('#home-landing .left .more').eq(0).find('a').html('400 West Elm').attr('href', '/projects/400-west-elm')
+    $('#home-landing .left .more').eq(1).find('a').html('Rockway Raleigh').attr('href', '/projects/rockway-raleigh')
+    $('#home-landing .left .more').eq(2).find('a').html('The Weld').attr('href', '/projects/the-weld')
+     $('#home-landing .left .more').eq(3).find('a').html('Glenwood Place').attr('href', '/projects/glenwood-place')
+    $('#home-landing .left .more').eq(4).find('a').html('The Griffin at Morrisville').attr('href', '/projects/the-griffin-at-morrisville')
+    $('#home-landing .left .more').eq(5).find('a').html('Moore Square Redevelopment').attr('href', '/projects/moore-square-redevelopment')
+     $('#home-landing .left .more').eq(6).find('a').html('Solis Hills').attr('href', '/projects/solis-hills')
+    $('#home-landing .left .more').eq(7).find('a').html('Jordan Office Building').attr('href', '/projects/jordan-office-building')
+    $('#home-landing .left .more').eq(7).find('a').html('The Harrison').attr('href', '/projects/the-harrison')
 
     $('.dot').click(function(){
       $('.landingDots.vertical .dot').removeClass('active')
