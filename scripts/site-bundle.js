@@ -93,7 +93,7 @@ $.ajaxSetup({ cache: false });
     $('#home-landing .left .more').eq(5).find('a').html('Moore Square Redevelopment').attr('href', '/projects/moore-square-redevelopment')
      $('#home-landing .left .more').eq(6).find('a').html('Solis Hills').attr('href', '/projects/solis-hills')
     $('#home-landing .left .more').eq(7).find('a').html('Jordan Office Building').attr('href', '/projects/jordan-office-building')
-    $('#home-landing .left .more').eq(7).find('a').html('The Harrison').attr('href', '/projects/the-harrison')
+    $('#home-landing .left .more').eq(8).find('a').html('The Harrison').attr('href', '/projects/the-harrison')
 
     $('.dot').click(function(){
       $('.landingDots.vertical .dot').removeClass('active')
